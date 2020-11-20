@@ -21,7 +21,7 @@
 
 | Column             | Type       | Options                          |
 | ------------------ | ---------- | -------------------------------- |
-| content            | string     | null: false                      |
+| content            | text       | null: false                      |
 | user               | references | null: false, foreign_key: true   |
 
 ### Association
