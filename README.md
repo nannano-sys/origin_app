@@ -1,24 +1,78 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column             | Type       | Options       |
+| ------------------ | ---------- | ------------- |
+| email              | string     | null: false   |
+| encrypted_password | string     | null: false   |
+| nickname           | string     | null: false   |
+| prefecture         | integer    | null: false   |
+| city               | string     |               |
 
-* Ruby version
 
-* System dependencies
+### Association
+- has_many : tweets
+- has_many : comments
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+## tweetsテーブル
 
-* How to run the test suite
+| Column             | Type       | Options                          |
+| ------------------ | ---------- | -------------------------------- |
+| content            | string     | null: false                      |
+| user               | references | null: false, foreign_key: true   |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- belongs_to : user
+- has_many   : comments
+- has_many   : tweet_tags
 
-* Deployment instructions
 
-* ...
+
+
+## commentsテーブル
+
+| Column             | Type       | Options                         |
+| ------------------ | ---------- | ------------------------------  |
+| text               | text       | null: false                     |
+| user               | references | null: false, foreign_key: true  |
+| tweet              | references | null: false, foreign_key: true  |
+
+### Association
+- belongs_to : tweet
+- belongs_to : user
+
+
+## tagsテーブル
+
+| Column             | Type       | Options       |
+| ------------------ | ---------- | ------------- |
+| category           | string     |               |
+
+### Association
+- has_many : tweet_tags
+
+
+
+## tweet_tagsテーブル
+
+| Column             | Type       | Options                          |
+| ------------------ | ---------- | -------------------------------- |
+| tweet              | references | null: false, foreign_key: true   |
+| tag                | references | null: false, foreign_key: true   |
+
+### Association
+- belongs_to : tweet
+- belongs_to : tag
+
+
+
+
+
+
+
+
+
+
