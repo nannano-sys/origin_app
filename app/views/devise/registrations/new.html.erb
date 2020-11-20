@@ -6,11 +6,11 @@
 
   <div class="field">
     <%= f.label :nickname %><br />
-    <%= f.text_field :email, autofocus: true, autocomplete: "nickname" %>
+    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) トラベラー", maxlength:"40" %>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
   </div>
 
   <div class="field">
@@ -25,6 +25,15 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+
+  <div class="field">
+   <%= f.label :select_prefecture %><br />
+   <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name,  {}, {}) %>
+   </div>
+
+   <div class="field">
+    <%= f.label :your_city %><br />
+    <%= f.text_area :city, class:"input-city", id:"city", placeholder:"例) 新宿区" %>
 
   <div class="actions">
     <%= f.submit "Sign up" %>

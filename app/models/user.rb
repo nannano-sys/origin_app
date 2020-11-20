@@ -6,5 +6,6 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :comments
+  extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
 end
