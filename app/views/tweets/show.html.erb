@@ -1,0 +1,6 @@
+<h1>hello!travellers！</h1> <%# ロゴ的なのはheaderとして切り出すので、部分テンプレートを作ることにする %>
+
+<h1>詳細</h1>
+<div class = user-name><%= link_to @tweet.user.nickname, "#", class: :show_name_btn%></div>
+<div class = tweet-text><%= @tweet.content%></div>
+
