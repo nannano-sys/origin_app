@@ -1,8 +1,31 @@
-.content{
+
+
+.tweet-content{
   list-style: none;
 }
 
 .user_name{
   list-style: none;
   font-size: 12px;
+}
+
+.name-show{
+  display: flex;
+}
+
+.show-tweet{
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.name_btn{
+  text-decoration: none;
+}
+
+.show_btn{
+  text-decoration: none;
+}
+
+.show_name_btn{
+  text-decoration: none;
 }
