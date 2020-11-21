@@ -29,3 +29,18 @@
 .show_name_btn{
   text-decoration: none;
 }
+
+.delete_btn{
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.tweet_show_text{
+  display: flex;
+
+}
+
+.show_link_top{
+  
+}
