@@ -5,6 +5,7 @@ hello!<%= link_to current_user.nickname, "#"%>
 <% @tweets.each do |tweet|%>
 <ul>
   <li class = "user_name"><%=link_to tweet.user.nickname, "#" %></li>
+  <li class = "show-tweet"><%= link_to "詳細", tweet_path(tweet.id)%>
   <li class = "content"><%= tweet.content%></li>
 </ul>
 <%end%>
