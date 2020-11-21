@@ -1,0 +1,12 @@
+<h1>hello_world</h1>
+<div>
+<%= link_to "トップページに戻る", root_path, class: :root_btn%>
+</div>
+
+<%= @user.nickname%>
+
+<% @tweets.each do |tweets|%>
+<ul class = tweet-content>
+  <li><%= tweets.content%></li>
+</ul>
+<%end%>
