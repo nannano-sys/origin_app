@@ -1,24 +1,27 @@
 <h1>hello_traveler!</h1>
 <% if user_signed_in?%>
-hello!<%= link_to current_user.nickname, "#"%>
+hello!<%= link_to current_user.nickname, user_path(current_user)%>
 <h5><%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %></h5>
+<% else %>
+<h5><%= link_to '新規登録', new_user_registration_path %></h5>
+<h5><%= link_to 'ログイン', new_user_session_path  %></h5>
+<%end %>
 <% @tweets.each do |tweet|%>
 <ul class = tweet-content>
   <div class = "name-show">
-    <li class = "user_name"><%=link_to tweet.user.nickname, "#" , class: :name_btn%></li>
+    <li class = "user_name"><%=link_to tweet.user.nickname, user_path(tweet.user_id) , class: :name_btn%></li>
     <li class = "show-tweet"><%= link_to "詳細", tweet_path(tweet.id), class: :show_btn%></li>
   </div>
     <li class = "content"><%= tweet.content%></li>
 </ul>
 <%end%>
-<%= form_with model: @tweet, local: true do |f| %>
-<%= f.text_area :content, class:"tweet-text", id:"tweet_content", placeholder:"今どうしてる？", maxlength:"100" %>
-<%= f.submit "tweet!" ,class:"send-btn" %>
+<% if user_signed_in?%>
+  <%= form_with model: @tweet, local: true do |f| %>
+  <%= f.text_area :content, class:"tweet-text", id:"tweet_content", placeholder:"今どうしてる？", maxlength:"100" %>
+  <%= f.submit "tweet!" ,class:"send-btn" %>
 <%end%>
-<% else %>
-<h5><%= link_to '新規登録', new_user_registration_path %></h5>
-<h5><%= link_to 'ログイン', new_user_session_path  %></h5>
-<%end %>
+<%end%>
+
 
 
 
