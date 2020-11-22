@@ -41,6 +41,11 @@
 
 }
 
-.show_link_top{
-  
+.comment_form{
+  display: block;
+}
+
+.comment_user_name{
+  font-size: 12px;
+  margin-top: 45px;
 }
