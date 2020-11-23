@@ -68,6 +68,18 @@
 - belongs_to : tag
 
 
+## relationshipsテーブル
+
+| Column             | Type       | Options                                     |
+| ------------------ | ---------- | ------------------------------------------- |
+| user               | references | null: false, foreign_key: true              |
+| follow             | references | null: false, foreign_key: to_abele: :user   |
+
+### Association
+- belongs_to : user
+- belongs_to : follow, class_name: 'User'
+
+
 
 
 
