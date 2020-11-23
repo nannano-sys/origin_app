@@ -6,9 +6,26 @@
 <div class = user-name><%= link_to @tweet.user.nickname, user_path(@user), class: :show_name_btn%></div>
 <div class = tweet_show_text>
   <div class = tweet-text><%= @tweet.content%></div>
-  <% if current_user.id == @tweet.user_id%>
-    <div class = tweet-delete><%= link_to "削除", tweet_path, method: :delete, class: :delete_btn%>
+  <% if current_user == @tweet.user %>
+    <div class = tweet-delete>
+      <%= link_to "削除", tweet_path, method: :delete, class: :delete_btn%>
+    </div>
   <% end %>
 </div>
+
+<% @comments.each do |comment|%>
+<div class = comment_user_name><%= comment.user.nickname%></div>
+<%= comment.text%>
+<%end%>
+
+<% if user_signed_in?%>
+<%= form_with model: [@tweet, @comment], local: true do |f|%>
+<div class = comment_form >
+  <%= f.text_field :text, placeholder: "コメントしよう！" %>
+  <%= f.submit "comment!" %>
+</div>
+<% end %>
+<% end %>
+
 
 
