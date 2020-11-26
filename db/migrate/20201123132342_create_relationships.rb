@@ -1,11 +1,13 @@
 class CreateRelationships < ActiveRecord::Migration[6.0]
   def change
     create_table :relationships do |t|
-      t.references :user, foreign_key: true
-      t.references :follow, foreign_key: {to_table: :users} #followingテーブルはないので、usersテーブルを参照するよう記述
+      t.integer :following_id
+      t.integer :follower_id
+
       t.timestamps
 
-      t.index [:user_id, :follow_id], unique: true #user(フォローする側)とfollow(フォローされる側)の組み合わせが重複しないようにする
+      #Mysqlではadd_indexが使用できないらしく、t.indexで代用(マイグレーションが中断し、エラーが出てしまった原因はこれにある)
+      t.index [:following_id, :follower_id], unique: true #カラム内のデータ重複を防ぐユニーク制約
     end
-  end
+    end
 end
