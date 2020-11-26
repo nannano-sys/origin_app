@@ -1,19 +1,33 @@
 <h1>hello_world</h1>
 <div>
-<%= link_to "トップページに戻る", root_path, class: :root_btn%>
+<%= link_to "トップページに戻る", root_path, class: :root_btn%>　
 </div>
 
+<%# ユーザー情報が出るところ %>
 <div class = user_info>
+<% if @user.id == current_user.id%>
+  <div> マイページ</div>
+<%end%>
 <%= @user.nickname%>
-<%= @user.prefecture.name%>
-</div>
 
+<%= @user.prefecture.name%>
+<p><%= link_to "フォロー数 :#{@user.followings.count}", follows_user_path(@user)%></p>
+<%= "フォロワー数 :#{@user.followers.count}"%>
+</div>
+<%# ユーザー情報が出るところ %>
+
+<%# フォローボタンとなるところ %>
+<%=render partial: "follow_btn", locals: {user: @user}%> 
+<%# フォローボタンとなるところ %>
+
+<%# ツイート一覧となるところ %>
 <div class = users_tweets>
-<div class = head>users_tweets</div> 
+<div class = head>ツイート一覧</div> 
 <% @tweets.each do |tweets|%>
 <ul class = tweet-content>
   <li><%= tweets.content%></li>
 </ul>
 <div>
+<%# ツイート一覧となるところ %>
 
 <%end%>

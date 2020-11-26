@@ -1,0 +1,16 @@
+<p><%= link_to "トップページに戻る", root_path%></p>
+<%=@user.nickname%><b>のフォロワー一覧</b>
+
+<% num = 1%>
+
+<%@users.each do |user|%>
+
+<p><%="#{num} :"%><%=link_to user.nickname, user_path(user)%></p>
+
+<%num += 1%>
+<%end%>
+
+
+
+      
+
