@@ -14,8 +14,10 @@
 </div>
 
 <% @comments.each do |comment|%>
-<div class = comment_user_name><%= comment.user.nickname%></div>
+<div class = comment_user_name><%=link_to comment.user.nickname, user_path(comment.user.id)%></div>
+
 <%= comment.text%>
+
 <%end%>
 
 <% if user_signed_in?%>
