@@ -6,25 +6,39 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :comments
-  has_many :relationships
-  has_many :followings, through: :relationships, source: :follow
-  has_many :reverse_of_relationshios, class_name: 'Relationship', foreign_key: :follow_id
-  has_many :followers, through: :reverse_of_relationshios, source: :user
+
+   # ====================自分がフォローしているユーザーとの関連 ===================================
+   #フォローする側からみて、フォローされる側のユーザー情報を取得する
+  has_many :active_relationships, class_name: "Relationship", foreign_key: "following_id", dependent: :destroy
+  has_many :followings, through: :active_relationships, source: :follower
+  
+ # ========================================================================================
+
+  
+
+
+  # ====================自分がフォローされているユーザーとの関連 ===================================
+  #フォローされる側のユーザから見て、フォローしている側のユーザー情報を取得する
+  has_many :passive_relationships, class_name: "Relationship", foreign_key: "follower_id", dependent: :destroy
+  has_many :followers, through: :passive_relationships, source: :following
+  
+  # =======================================================================================
+
+  #上記のアソシエーションで、followeingsにはフォローされる側、つまり、自分がフォローしているユーザー情報が入る
+  #上記のアソシエーションで、followersにはフォローする側、つまり、自分をフォローしているユーザー情報が入る
+
+  def followed_by?(user)
+    # 今自分(引数のuser)がフォローしようとしているユーザー(レシーバー)の「フォローされているユーザー(つまりpassive)」の中に、引数に渡されたユーザー(自分)がいるかどうかを調べる
+    # すなわち、すでにフォローしているユーザーかそうでないかを調べるインスタンスメソッド
+    passive_relationships.find_by(following_id: user.id).present?
+  end
+  
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
 
-  def follow(other_user)
-    unless selfe == other_user
-      self.relationships.find_or_create_by(follow_id: other_user.id)
-    end
+ 
 
-  def unfollow(other_user)
-    relationship = self.relationships.find_by(follow_id: other_user.id)
-    relationship.destroy if relationship
-  end
-
-  def following?(other_user)
-    self.followings.include(other_user)
-  end
-  
 end
+
+
+  
