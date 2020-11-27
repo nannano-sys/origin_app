@@ -83,7 +83,60 @@
 - belongs_to :following, class_name: "User"
 - belongs_to :follower, class_name: "User"
 
+<<<<<<< Updated upstream
 
+=======
+```
+アプリ名：未定
+```
+
+```
+アプリケーション概要：ツイート、コメント、フォロー
+```
+
+```
+テスト用アカウント：name:サンプル, pass 111111,  email: sam@sam.com
+```
+
+```
+目指した課題解決 : 旅行好きな自分のために、旅行情報を呟くためのTwitterのような物を作ってみたいと思ったため
+```
+
+```
+洗い出した要件 ： ログイン、ログアウト機能があること、ツイート機能があること、コメント機能があること、フォロー機能があること、タグ機能があること(現段階では未実装)
+```
+
+```
+実装した機能についてのGIFと説明：
+- 新規登録できる https://gyazo.com/b913d9321c50a870c443e9a33b51b9ab
+- ログインできる https://gyazo.com/6aaaa477a28b674da505f3a3d47c2694
+- ログアウトできる https://gyazo.com/287054ec9380cee42a720c91cd0f9f7f
+- ツイートフォームでツイートをすると、トップトップページに表示される。誰でも閲覧可能 https://gyazo.com/4e54d74ed56e427c1cc47785dbb88f57
+- ツイートにコメントすると、ツイート詳細にてコメントが表示される https://gyazo.com/9245dd5972ccd5eca7fe98943615f464
+- ツイートを削除できる https://gyazo.com/af181d8081a49d35f4fbb27537e52688
+- ユーザーの詳細がみれる https://gyazo.com/b60044e0ab1a4b271787099e1dde5561
+- ユーザーをフォローできる https://gyazo.com/f61faaafb453522f67671966dedf9f80
+- ユーザーのフォローを解除できる https://gyazo.com/3dee3c2ffec0603c0f1a46f53aa84aaf
+- フォローしているユーザー一覧を見ることができる https://gyazo.com/5b546824836f70e4d7a33274bc8fd2fb
+```
+
+```
+実装予定の機能:
+- タグ機能
+- いいね機能
+```
+
+```
+データベース設計:
+
+```
+
+```
+ローカルでの動作方法
+```
+
+ 
+>>>>>>> Stashed changes
 
 
 
