@@ -1,2 +1,0 @@
-class TweetTag < ApplicationRecord
-end
