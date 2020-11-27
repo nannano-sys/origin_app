@@ -83,6 +83,7 @@
 - belongs_to :following, class_name: "User"
 - belongs_to :follower, class_name: "User"
 
+
 ```
 アプリ名：未定
 ```
@@ -110,11 +111,11 @@
 - ログアウトできる https://gyazo.com/287054ec9380cee42a720c91cd0f9f7f
 - ツイートフォームでツイートをすると、トップトップページに表示される。誰でも閲覧可能 https://gyazo.com/4e54d74ed56e427c1cc47785dbb88f57
 - ツイートにコメントすると、ツイート詳細にてコメントが表示される https://gyazo.com/9245dd5972ccd5eca7fe98943615f464
-- ツイートを削除できる
-- ユーザーの詳細がみれる
-- ユーザーをフォローできる
-- ユーザーのフォローを解除できる
-- フォローしているユーザー一覧を見ることができる
+- ツイートを削除できる https://gyazo.com/af181d8081a49d35f4fbb27537e52688
+- ユーザーの詳細がみれる https://gyazo.com/b60044e0ab1a4b271787099e1dde5561
+- ユーザーをフォローできる https://gyazo.com/f61faaafb453522f67671966dedf9f80
+- ユーザーのフォローを解除できる https://gyazo.com/3dee3c2ffec0603c0f1a46f53aa84aaf
+- フォローしているユーザー一覧を見ることができる https://gyazo.com/5b546824836f70e4d7a33274bc8fd2fb
 ```
 
 ```
@@ -133,6 +134,7 @@
 ```
 
  
+
 
 
 
