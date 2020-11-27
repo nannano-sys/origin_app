@@ -83,9 +83,7 @@
 - belongs_to :following, class_name: "User"
 - belongs_to :follower, class_name: "User"
 
-<<<<<<< Updated upstream
 
-=======
 ```
 アプリ名：未定
 ```
@@ -136,7 +134,7 @@
 ```
 
  
->>>>>>> Stashed changes
+
 
 
 
