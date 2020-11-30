@@ -5,27 +5,40 @@
 
 <%# ユーザー情報が出るところ %>
 <div class = user_info>
-<% if @user.id == current_user.id%>
+<% if user_signed_in? && @user.id == current_user.id%> 
   <div> マイページ</div>
+  <h5><%= link_to "ユーザー情報を編集しましょう", edit_user_registration_path%>
+<%end%><%# フォローボタンとなるところ %>
+<%=render partial: "follow_btn", locals: {user: @user}%> 
+<%# フォローボタンとなるところ %>
+<ul>
+ <li class = "users-prof">名前: <%= @user.nickname%></li>
+ <li class = "users-prof">出身: <%= @user.prefecture.name%></li>
+<%if @user.age.present?%>
+  <li class = "users-prof">年齢：<%= @user.age%></li>
 <%end%>
-<%= @user.nickname%>
-
-<%= @user.prefecture.name%>
+<% if @user.hoby.present? %>
+  <li class = "users-prof">趣味：<%= @user.hoby%></li>
+<%end%>
+<% if @user.want.present? %>
+<li class = "users-prof">行きたい場所：<%= @user.want%></li>
+<%end%>
+<%if @user.profile.present?%>
+  <li class = "users-prof">プロフィール：<%= @user.profile%></li>
+<%end%>
+</ul>
 <p><%= link_to "フォロー数 :#{@user.followings.count}", follows_user_path(@user)%></p>
-<%= "フォロワー数 :#{@user.followers.count}"%>
+<%= link_to "フォロワー数 :#{@user.followers.count}", followers_user_path(@user)%>
 </div>
 <%# ユーザー情報が出るところ %>
 
-<%# フォローボタンとなるところ %>
-<%=render partial: "follow_btn", locals: {user: @user}%> 
-<%# フォローボタンとなるところ %>
 
 <%# ツイート一覧となるところ %>
 <div class = users_tweets>
 <div class = head>ツイート一覧</div> 
 <% @tweets.each do |tweets|%>
 <ul class = tweet-content>
-  <li><%= tweets.content%></li>
+  <li><%=link_to tweets.title, tweet_path(tweets)%></li>
 </ul>
 <div>
 <%# ツイート一覧となるところ %>

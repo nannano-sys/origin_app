@@ -1,11 +1,11 @@
-<h1>hello!travellers！</h1> <%# ロゴ的なのはheaderとして切り出すので、部分テンプレートを作ることにする %>
-
-<div class = root-btn><%= link_to "トップページへ戻る", root_path, class: :show_link_top%></div>
-
-<h1>詳細</h1>
+<h1　class = root-btn><%= link_to "hello!travellers！", root_path, class: :show_link_top%></h1> <%# ロゴ的なのはheaderとして切り出すので、部分テンプレートを作ることにする %>
 <div class = user-name><%= link_to @tweet.user.nickname, user_path(@user), class: :show_name_btn%></div>
+
+
+<h1 class = tweet-title><%= @tweet.title%></h1>
+
 <div class = tweet_show_text>
-  <div class = tweet-text><%= @tweet.content%></div>
+  <div class = tweet-texts><%= @tweet.content%></div>
   <% if current_user == @tweet.user %>
     <div class = tweet-delete>
       <%= link_to "削除", tweet_path, method: :delete, class: :delete_btn%>
@@ -16,7 +16,7 @@
 <% @comments.each do |comment|%>
 <div class = comment_user_name><%=link_to comment.user.nickname, user_path(comment.user.id)%></div>
 
-<%= comment.text%>
+<div class = comment-text><%= comment.text%></div>
 
 <%end%>
 

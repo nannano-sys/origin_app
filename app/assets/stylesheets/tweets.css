@@ -47,5 +47,35 @@
 
 .comment_user_name{
   font-size: 12px;
-  margin-top: 45px;
+}
+header{
+  height: 100px;
+}
+.form-area{
+  text-align: center;
+}
+
+.title-text{
+  width: 600px;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.tweet-text{
+  width: 600px;
+  height: 400px;
+  font-size: large;
+}
+
+.tweet-title{
+  text-align: center;
+}
+
+.tweet-texts{
+  margin-bottom: 200px;
+}
+
+.comment-text{
+  padding: 10px;
+  border: 1px solid burlywood;
 }

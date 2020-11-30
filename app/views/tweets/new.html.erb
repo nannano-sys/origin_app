@@ -1,0 +1,19 @@
+<header>
+</header>
+
+<%= form_with model: @tweet, local: true do |f| %>
+<div class = "form-area">
+  <div class = "title-form">
+  <%= f.text_area :title, class:"title-text", id:"tweet_title", placeholder:"タイトル", maxlength:"100" %>
+  </div>
+  <div class = tweet-form>
+  <%= f.text_area :content, class:"tweet-text", id:"tweet_content", placeholder:"今どうしてる？", maxlength:"500" %>
+  </div>
+  <div class = "btn">
+  <%= f.submit "tweet!" ,class:"send-btn" %>
+  </div>
+</div>
+<%end%>
+
+<footer>
+</footer>

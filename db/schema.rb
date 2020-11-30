@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_11_23_132342) do
   end
 
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "title", null: false
     t.text "content", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -43,7 +44,10 @@ ActiveRecord::Schema.define(version: 2020_11_23_132342) do
     t.string "encrypted_password", default: "", null: false
     t.string "nickname", null: false
     t.integer "prefecture_id", null: false
-    t.string "city"
+    t.integer "age"
+    t.string "hoby"
+    t.string "want"
+    t.text "profile"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
