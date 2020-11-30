@@ -1,10 +1,43 @@
-<% @users.each do |user| %>
+ 
 
+<div class = "wrapper">
+ <p><%= link_to "tweetページへ", new_tweet_path%></p>
+ <%= render 'sign_in',  locals: {user: @user}%>
+ 
+<div>ユーザー一覧</div>
+
+
+<% @users.each do |user| %>
+<% if user_signed_in?%>
     <% if current_user != user %>
+    <div class = "user_wrapper">
+    <b>ユーザ名：</b><%= link_to user.nickname, user_path(user)%>
         <% if user.followed_by?(current_user) %>
-            <%= user.nickname%><p><%=link_to "フォロー解除", user_relationships_path(user.id), method: :delete %></p>
-        <% else %>
-            <%= user.nickname%><p><%=link_to "フォローする", user_relationships_path(user.id), method: :post %></p>
-        <% end %>
+    <b class = "follow？">フォロー済</b>
+        <%end%>
+    
+<div class = "user-prof">      
+    <ul class = "users_list">
+        <li class = "profile">プロフィール</li>
+        <li><%= user.prefecture.name%></li>
+    <%if user.age.present?%>
+        <li>年齢：<%= user.age%></li>
+    <%end%>
+    <% if user.hoby.present? %>
+        <li>趣味：<%= user.hoby%></li>
+    <%end%>
+    <% if user.want.present? %>
+        <li>行きたい場所：<%= user.want%></li>
+    <%end%>
+    <%if user.profile.present?%>
+        <li class = plof><p><%= user.profile%></p></li>
+    <%end%>
+    </ul>
+</div>
+</div>
     <% end %>
-<%end%>
+  <% end %>
+<% end %>
+</div>
+
+

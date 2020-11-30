@@ -9,6 +9,14 @@ class UsersController < ApplicationController
     @tweets = @user.tweets.all
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.update(user_params)
+  end
+
   def follows
     @user = User.find(params[:id])
     @users = @user.followings #自分がフォローしているユーザー情報を取得し、@usersというインスタンスに格納している

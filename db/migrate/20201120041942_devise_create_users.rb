@@ -8,7 +8,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string  :encrypted_password, null: false, default: ""
       t.string :nickname, null: false
       t.integer :prefecture_id, null: false
-      t.string  :city
+      t.integer :age #年齢
+      t.string  :hoby #趣味
+      t.string  :want #行きたいところ
+      t.text    :profile #自己紹介
 
       ## Recoverable
       t.string   :reset_password_token

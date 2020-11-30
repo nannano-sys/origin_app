@@ -13,3 +13,37 @@
   font-size: 20px;
 }
 
+.profile{
+  font-size: 20px;
+  list-style: none;
+}
+
+.follow{
+  margin-left: 10px;
+}
+
+.follow？{
+  margin: 10px;
+  font-size: 10px;
+  color: darkgray;
+}
+
+
+.users{
+  width: 300px;
+  
+}
+
+.plof{
+  list-style: none;
+  margin-top: 5px;
+  font-size: large;
+}
+
+.user-prof{
+  margin-bottom: 10px;
+  background-color: lightgrey;
+}
+
+
+
