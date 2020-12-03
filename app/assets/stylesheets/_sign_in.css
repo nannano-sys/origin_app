@@ -37,12 +37,12 @@
   padding: 10px;
   text-decoration: none;
   border-radius: 10px;
-  color: skyblue;
+  color: #FFA500;
   transition: .4s;
 }
 
 .new_registration:hover {
-  background: #67c5ff;
+  background: #FFA500;
   color: white;
 }
 
