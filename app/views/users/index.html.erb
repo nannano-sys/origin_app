@@ -4,8 +4,6 @@
 <% if user_signed_in?%>
  <p><%= link_to "tweetページへ", new_tweet_path%></p>
  
- <div class = toppage-image>
-</div>
  <%end%>
 
 
@@ -44,8 +42,7 @@
     <% end %>
   <% end %>
   <%else%>
-  <h1>このアプリケーションは、ユーザーから情報にアプローチする旅情報アプリです</h1>
-  <h1>まずはログインかユーザー登録をしましょう</h1>
+  <%= render partial: "top-page"%> 
 <% end %>
 </div>
 </div>

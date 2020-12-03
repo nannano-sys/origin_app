@@ -18,11 +18,13 @@
         <div class = travel-note-list-header>
         </div>
         <div class = travel-note-list-content>
+          <% @tweets.each do |tweets|%>
           <ul>
-            <li>
-              
+            <li class = show-travel-note-list-wrapper>
+              <%=link_to tweets.title, tweet_path(tweets), class: "show-travel-note-list-content"%>
             </li>
           </ul>
+          <%end%>
         </div>
       </div>
     </div>

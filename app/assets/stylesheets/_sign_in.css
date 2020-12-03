@@ -6,6 +6,12 @@
   text-decoration: none;
   border-radius: 10px;
   color: skyblue;
+  transition: .4s;
+}
+
+.logout:hover {
+  background: #67c5ff;
+  color: white;
 }
 
 .mypage{
@@ -16,6 +22,12 @@
   text-decoration: none;
   border-radius: 10px;
   color: skyblue;
+  transition: .4s;
+}
+
+.mypage:hover {
+  background: #67c5ff;
+  color: white;
 }
 
 .new_registration{
@@ -26,6 +38,12 @@
   text-decoration: none;
   border-radius: 10px;
   color: skyblue;
+  transition: .4s;
+}
+
+.new_registration:hover {
+  background: #67c5ff;
+  color: white;
 }
 
 .login{
@@ -36,4 +54,10 @@
   text-decoration: none;
   border-radius: 10px;
   color: skyblue;
+  transition: .4s;
+}
+
+.login:hover {
+  background: #67c5ff;
+  color: white;
 }

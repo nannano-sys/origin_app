@@ -1,0 +1,68 @@
+
+    <div class = top-page-wrapper>
+      
+      <div class = top-page-header>
+        <div class = top-page-image-wrapper>
+        <%= image_tag 'round-map.png', class: "top-page-image" %>
+        </div>
+        <div class = "top-page-title-text-wrapper">
+          <h1 class = top-page-title-text>トラベルノートで</h1>
+          <h1 class = top-page-title-text>旅行にもっとワクワクを。</h1>
+        </div>
+      </div>
+
+      <div class = top-page-main>
+        <div class = top-page-main-text-wrapper>
+          <div class = top-page-main-text >
+            トラベルノートは、「ユーザー目線」から旅情報にアプローチします
+          </div>
+        </div>
+        <div class = how-to-use-wrapper>
+          <div class = how-to-use-text-wrapper>
+          <div class = how-to-use-text-1>
+            ユーザーから旅行記録にアクセス
+          </div>
+          <div class = how-to-use-text-2>
+            ユーザーと繋がって情報交換
+          </div>
+          </div>
+          <div class = how-to-use-image-wrapper>
+            <div class = how-to-use-image-no1>
+              <%= image_tag 'search-user.png', class: "how-to-use-image-girl" %>
+            </div>
+            <div class = how-to-use-image-no2>
+              <%= image_tag 'follow-user.png', class: "how-to-use-image-follow" %>
+              <%= image_tag 'follower-user.png', class: "how-to-use-image-follower" %>
+            </div>
+          </div>
+          <div class = lets-use-wrapper>
+            <div class = lets-use-text-wrapper>
+              <div class = lets-use-text>
+                あなたの旅がより良くなるお手伝いをします！
+              </div>
+            </div>
+            <div class = log-in-sign-in-wrapper>
+              <div class = log-in-sign-in-message-wrapper>
+                <div class = log-in-message>
+                  以下からログイン
+                </div>
+                <div class = ign-in-message>
+                  アカウントをお持ちでないですか？
+                </div>
+              </div>
+              <div class = log-in-sign-in-btn-wrapper>
+                <div class = log-in-btn-wrapper>
+                  <%= link_to 'ログイン', new_user_session_path, class: "log-in-btn"  %>
+                </div>
+                <div class = sign-in-btn-wrapper>
+                  <%= link_to '新規登録', new_user_registration_path, class: "sign-in-btn"%>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = top-page-footer>
+      </div>
+    </div>
+  

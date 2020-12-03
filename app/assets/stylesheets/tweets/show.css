@@ -74,6 +74,21 @@
   height: calc(100% - 60px);
 }
 
+.show-travel-note-list-wrapper{
+  margin-top: 20px;
+  padding: 0.4em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+.show-travel-note-list-content{
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: large;
+  color: #555;
+}
+
 .comment-form-wrapper{
   height: 50px;
   width: 780px;
@@ -126,9 +141,21 @@
 }
 
 .travel-comment-user{
-  height: 35px;
-  width: 100px;
-  background-color: mintcream;
+  height: 25px;
+  width: 80px;
+  color: #505050;/*文字色*/
+  padding: 0.3em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.2;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+.ravel-comment-user:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
 }
 
 .travel-comment-text{
