@@ -1,16 +1,33 @@
-<p><%= link_to "トップページに戻る", root_path%></p>
-<%=@user.nickname%><b>のフォロー一覧</b>
 
-<% num = 1%>
+<%=@user.nickname%><b>のフォロー一覧</b>
 
 <%@users.each do |user|%>
 
-<p><%="#{num} :"%><%=link_to user.nickname, user_path(user)%></p>
-
-<%num += 1%>
+<div class = "following_wrapper">
+    <div class = "user-name-info">ユーザ名：<%= link_to user.nickname, user_path(user), class: "user-name"%></div>
+      
+<div class = "user-prof">      
+    <ul class = "users_list">
+        <li class = "profile">プロフィール</li>
+        <div class = "list-content">
+        <li>出身 : <%= user.prefecture.name%></li>
+    <%if user.age.present?%>
+        <li>年齢：<%= user.age%></li>
+    <%end%>
+    <% if user.hoby.present? %>
+        <li>趣味：<%= user.hoby%></li>
+    <%end%>
+    <% if user.want.present? %>
+        <li>行きたい場所：<%= user.want%></li>
+    <%end%>
+    <%if user.profile.present?%>
+        <li class = plof><%= user.profile%></li>
+    <%end%>
+    </div>
+    </ul>
+</div>
+</div>
 <%end%>
-
-
 
       
 

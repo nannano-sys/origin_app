@@ -1,0 +1,39 @@
+.logout{
+  font-size: large;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: skyblue;
+}
+
+.mypage{
+  font-size: large;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: skyblue;
+}
+
+.new_registration{
+  font-size: large;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: skyblue;
+}
+
+.login{
+  font-size: large;
+  margin-right: 20px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: skyblue;
+}

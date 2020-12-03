@@ -1,6 +1,21 @@
+
+
+.users-index-background-wrapper{
+  background-color: #eeffff4b;
+}
+
+.toppage-image{
+  height: 200px;
+}
+
+.wrapper{
+  margin-top: 50px;
+}
 .tweet-content{
   list-style: none;
 }
+
+
 
 .root_btn{
   text-decoration: none;
@@ -8,10 +23,7 @@
   margin-bottom: 10px;
 }
 
-.head{
-  margin-top: 30px;
-  font-size: 20px;
-}
+
 
 .profile{
   font-size: 20px;
@@ -26,6 +38,8 @@
   margin: 10px;
   font-size: 10px;
   color: darkgray;
+  background-color: #DDFFFF;
+  padding: 5px;
 }
 
 
@@ -41,9 +55,62 @@
 }
 
 .user-prof{
-  margin-bottom: 10px;
-  background-color: lightgrey;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e96;/*線色*/
+  padding: 0.5em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
 }
+
+
+
+.wrapper{
+  margin: 0px 100px;
+}
+
+li{
+  list-style: none;
+}
+
+.list-content{
+  margin-left: 10px;
+}
+
+
+.info-list{
+  font-size: large;
+}
+
+
+
+.users_tweets{
+  margin-left: 200px;
+}
+
+.tweet-content-list{
+  text-decoration: none;
+}
+
+
+.user-name-info{
+  color: #505050;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.user-name-info:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+
+
+
 
 
 

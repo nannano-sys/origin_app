@@ -1,33 +1,51 @@
-<h1　class = root-btn><%= link_to "hello!travellers！", root_path, class: :show_link_top%></h1> <%# ロゴ的なのはheaderとして切り出すので、部分テンプレートを作ることにする %>
-<div class = user-name><%= link_to @tweet.user.nickname, user_path(@user), class: :show_name_btn%></div>
+<div class = travel-note-wrapper>
 
-
-<h1 class = tweet-title><%= @tweet.title%></h1>
-
-<div class = tweet_show_text>
-  <div class = tweet-texts><%= @tweet.content%></div>
-  <% if current_user == @tweet.user %>
-    <div class = tweet-delete>
-      <%= link_to "削除", tweet_path, method: :delete, class: :delete_btn%>
+     <div class = note-title>
+       <div class = note-title-text>
+          <%= @tweet.title%>
+       </div>
+     </div>
+    <div class = note-content-wrapper>
+     <div class = note-content>
+       <div class = note-content-text>
+         <%= @tweet.content%>
+        </div>
+        <div class = travel-note-delete-btn-wrapper>
+        <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
+        </div>
+      </div>
+      <div class = travel-note-list>
+        <div class = travel-note-list-header>
+        </div>
+        <div class = travel-note-list-content>
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  <% end %>
-</div>
-
-<% @comments.each do |comment|%>
-<div class = comment_user_name><%=link_to comment.user.nickname, user_path(comment.user.id)%></div>
-
-<div class = comment-text><%= comment.text%></div>
-
-<%end%>
-
-<% if user_signed_in?%>
-<%= form_with model: [@tweet, @comment], local: true do |f|%>
-<div class = comment_form >
-  <%= f.text_field :text, placeholder: "コメントしよう！" %>
-  <%= f.submit "comment!" %>
-</div>
-<% end %>
-<% end %>
-
-
-
+    <% if user_signed_in?%>
+      <%= form_with model: [@tweet, @comment], local: true do |f|%>
+    <div class = comment-form-wrapper>
+      <div class = travel-comment-form>
+        <div class="travel-new-comment-form">
+          <%= f.text_field :text, placeholder: "コメントしよう！", class: "input-text" %>
+        </div>
+      </div>
+        <%= f.submit "コメント!", class: "travel-comment-send-btn" %>
+      </div>
+      <%end%>
+    <% @comments.each do |comment|%>
+    <div class = comment-text-wrapper>
+          <div class = travel-comment-user>
+            <%=link_to comment.user.nickname, user_path(comment.user.id)%>
+          </div>
+          <div class = travel-comment-text>
+            <%= comment.text%>
+          </div>
+    </div>
+    <%end%>
+  <%end%>
+  </div>

@@ -1,0 +1,29 @@
+.form-field{
+  text-align: center;
+}
+
+.field{
+  margin-top: 20px;
+}
+
+.input-default{
+  width: 400px;
+  font-size: large;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+}
+
+.edit-text{
+  text-align: center;
+}
+
+.actions{
+  margin-top: 50px;
+  
+}
+
+[type=submit] {
+  padding: 10px;
+  width: auto;
+}
