@@ -30,10 +30,12 @@
   color:#FAFAFA;
 }
 
-h2 {
+.new-registration-header {
   text-align:center;
-  padding:18px 0 18px 0;
+  padding:12px 0 12px 0;
   font-size: 1.4em;
+  background-color:#FFA500;
+  border-radius:6px 6px 0px 0px;
 }
 
 input {
@@ -96,7 +98,7 @@ input, textarea {
   color:#fff;
 }
 
-button:hover, .button:hover {
+.sign-up-button:hover, .button:hover {
   background: #FFA500;
 }
 
@@ -125,8 +127,8 @@ label.error {
   input, textarea {
     width: 90%;
   }
-  button {
-    width:90%;
+  .sign-up-button {
+    width:70%;
   }
 
 .message {

@@ -5,7 +5,7 @@
 <div class = new-registration-container>
   <div class="container">
     <div class="head">
-      <h2>新規登録</h2>
+      <h2 class = new-registration-header>新規登録</h2>
     </div>
     <div class = "ew-registration-nickname-wrapper">
       <%= f.text_area :nickname, class:"new-registration-nickname", id:"nickname", placeholder:"例) トラベラー", maxlength:"10" %>
@@ -20,8 +20,8 @@
       <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name,  {}, {class: "user-prefecture"}) %>
     </div>
     <div class="message"></div>
-    <div class = "log-in-button" id="submit" type="submit" >
-      <%= f.submit "Sign up", class: "new-session-log-in-btn", class: "button" %>
+    <div class = "sign-up-button-wrapper" id="submit" type="submit" >
+      <%= f.submit "Sign up", class: "new-session-log-in-btn", class: "sign-up-button" %>
     </div>
   </div>
 </div>

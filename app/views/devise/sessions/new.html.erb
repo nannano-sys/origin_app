@@ -11,8 +11,8 @@
     </div>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mali", class: "new-session-email" %><br />
     <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password", class: "new-session-password" %><br />
-    <div class = "log-in-button" id="submit" type="submit" >
-      <%= f.submit "Log in", class: "new-session-log-in-btn", class: "button" %>
+    <div class = "log-in-button-wrapper" id="submit" type="submit" >
+      <%= f.submit "Log in", class: "new-session-log-in-btn", class: "log-in-button" %>
     </div>
   </div>
 </div>
