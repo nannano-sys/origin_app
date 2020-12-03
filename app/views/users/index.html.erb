@@ -3,8 +3,17 @@
 <div class = "wrapper">
 <% if user_signed_in?%>
  <p><%= link_to "tweetページへ", new_tweet_path%></p>
- 
- <%end%>
+
+ <div class = top-page-header>
+        <div class = top-page-image-wrapper>
+        <%= image_tag 'round-map.png', class: "top-page-image" %>
+        </div>
+        <div class = "top-page-title-text-wrapper">
+        <h1 class = users-index-title-text>気になるユーザーはいましたか？</h1>
+        <h1 class = users-index-title-text>トラベルノートをチェックしましょう</h1>
+</div>
+</div>
+<%end%>
 
 
 
