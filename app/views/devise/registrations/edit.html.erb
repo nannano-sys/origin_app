@@ -1,67 +1,35 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+    
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-  <div class="field">
-    <%= f.label :nickname %><br />
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) トラベラー", maxlength:"40" %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<%= render "devise/shared/error_messages", resource: resource %>
+<div class = new-edit-wrapper>
+<div class = new-edit-container>
+  <div class="container">
+    <div class="head">
+      <h2>プロフィール編集</h2>
+    </div>
+    <div class = "ew-new-edit-wrapper">
+      <%= f.text_area :nickname, class:"new-edit-nickname", id:"nickname", placeholder:"例) トラベラー", maxlength:"10" %>
+    </div>
+      <%= f.email_field :email, class:"new-edit-email", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+      <%= f.password_field :current_password, autocomplete: "new-edit-password" ,placeholder:"Password(本人確認)"%>
+    <div class = user-prefecture-wrapper>
+    <div class = user-prefecture-text-wrapper>
+      <b class = "user-prefecture-text">出身</b>
+    </div>
+      <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name,  {}, {class: "user-prefecture"}) %>
+    </div>
+    <%= f.text_field :age, class:"new-edit-age", placeholder:"年齢：年齢を共有しましょう！" %>
+    <%= f.text_field :hoby, class:"new-edit-hoby", placeholder:"趣味：趣味を共有しましょう！" %>
+    <%= f.text_field :want, class:"new-edit-want", placeholder:"行きたいところ：行きたいところは？仲間が見つかるかも！" %>
+    <%= f.text_field :profile, class:"new-edit-profile", placeholder:"自己紹介：あなたのことをみんなに知ってもらいましょう！" %>
+    <div class="message">Message Sent</div>
+    <div class = "update-button-wrapper" id="submit" type="submit" >
+      <%= f.submit "Update", class: "update-button" %>
+    </div>
   </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :age %>
-    <%= f.text_field :age, placeholder:"年齢を共有しましょう！" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :hoby %>
-    <%= f.text_field :hoby, placeholder:"趣味を共有しましょう！" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :want_to_go %>
-    <%= f.text_field :want, placeholder:"行きたいところは？仲間が見つかるかも！" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :profile %>
-    <%= f.text_field :profile, placeholder:"あなたのことをみんなに知ってもらいましょう！" %>
-  </div>
-  
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+</div>
+</div>
+  <%end%>

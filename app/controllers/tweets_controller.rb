@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
   end
 
   def new
-    @tweet = Tweet.new
+      @tweet = Tweet.new
   end
 
   def create
@@ -20,7 +20,8 @@ class TweetsController < ApplicationController
 
   def show
     @tweet = Tweet.find(params[:id])
-    @user = @tweet.user_id
+    @user = @tweet.user
+    @tweets = @user.tweets.all
     @comment = Comment.new
     @comments = @tweet.comments
   end

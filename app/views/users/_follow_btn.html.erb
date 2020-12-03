@@ -1,9 +1,13 @@
 <% if current_user != user %>
   <% if user_signed_in?%>
+    <div class = "follow-btn">
         <% if user.followed_by?(current_user) %>
-            <p><%=link_to "フォロー解除", user_relationship_path(user.id), method: :delete %></p>
+            <%=link_to "フォロー解除", user_relationship_path(user.id), method: :delete, class: "unfollow" %>
         <% else %>
-            <p><%=link_to "フォローする", user_relationships_path(user.id), method: :post %></p>
+            <%=link_to "フォローする", user_relationships_path(user.id), method: :post, class: "dofollow" %>
         <% end %>
+    </div>
     <%end%>
-  <% end %>
+    <%else%>
+      <%= render partial: "edit-user-btn"%> 
+<% end %>

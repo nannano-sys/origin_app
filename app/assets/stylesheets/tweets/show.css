@@ -1,0 +1,190 @@
+
+
+.travel-note-wrapper{
+  margin: 0px 100px;
+}
+
+.note-title{
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.note-content-wrapper{
+  display: flex;
+}
+
+.note-content{
+  height: 100vh;
+  width: 800px;
+  background-color: #ffa6002c;
+}
+
+.travel-note-list{
+  width: 250px;
+  margin-left: 20px;
+  background-color: #ffa6002c;
+}
+
+.travel-note-list-header{
+  height: 60px;
+  background-color: #ffa6007a;
+}
+
+.note-content-text{
+  margin: 0px 10px;
+  font-size: large;
+}
+
+.travel-note-delete-btn-wrapper{
+  margin-right: 20px;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+}
+
+.travel-note-delete-btn{
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.travel-note-delete-btn:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.note-title-text{
+  font-size: 40px;
+}
+
+.travel-note-list-content{
+  height: calc(100% - 60px);
+}
+
+.show-travel-note-list-wrapper{
+  margin-top: 20px;
+  padding: 0.4em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+.show-travel-note-list-content{
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: large;
+  color: #555;
+}
+
+.comment-form-wrapper{
+  height: 50px;
+  width: 780px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.travel-comment-form{
+  height: 50px;
+  width: 600px;
+  
+}
+
+.travel-comment-send-btn{
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.travel-comment-send-btn:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.input-text{
+  height: 40px;
+  width: 600px;
+}
+
+.submit-btn{
+  height: 40px;
+  width: 50px;
+}
+
+.comment-text-wrapper{
+  height: 70px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.travel-comment-user{
+  height: 25px;
+  width: 80px;
+  color: #505050;/*文字色*/
+  padding: 0.3em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.2;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+.ravel-comment-user:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+
+.travel-comment-text{
+  height: 40px;
+  width: 500px;
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.travel-comment-text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.travel-comment-text p {
+  margin: 0;
+  padding: 0;
+}

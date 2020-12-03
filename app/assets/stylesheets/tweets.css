@@ -79,3 +79,12 @@ header{
   padding: 10px;
   border: 1px solid burlywood;
 }
+
+.send-btn{
+  transition: .4s;
+}
+
+.send-btn:hover {
+  background: #FF8C00;
+  color: white;
+}

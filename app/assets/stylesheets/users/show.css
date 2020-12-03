@@ -1,0 +1,177 @@
+
+
+
+.show-wrapper{
+  display: flex;
+  height: 100vh;
+  margin: 0px 50px;
+}
+
+.show-side-bar{
+  width: 400px;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e968c;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  margin-top: 20px;
+}
+
+.show-main-bar{
+  width: calc(100% - 300px);
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e9688;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  margin: 20px 0px 0px 20px;
+}
+
+.show-name-wrapper{
+  height: 80px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.show-user-name{
+  height: 25px;
+  width: 150px;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e9686;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  font-size: large;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.show-user-name-text{
+  margin-left: 20px;
+}
+
+
+.show-follow_follower{
+  height: 25px;
+  width: 300px;
+  margin-left: 30px;
+  display: flex;
+
+}
+
+.show-follow{
+  height: 25px;
+  width: 140px;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e967e;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.show-follower{
+  height: 25px;
+  width: 140px;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e9683;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.show-follow_count{
+  text-decoration: none;
+  color: #364e96;
+  margin-left: 25px;
+}
+
+.show-follower_count{
+  text-decoration: none;
+  color: #364e96;
+  margin-left: 23px;
+}
+
+
+.show-detail-list{
+  height: 30px;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e9681;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 18px;
+}
+
+.show-detail-prof{
+  height: 100px;
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 30px;
+  position: relative;
+  background:white;
+  color: #364e96;/*文字色*/
+  border: solid 3px #364e967a;/*線色*/
+  padding: 0.0em;/*文字周りの余白*/
+  border-radius: 0.5em;/*角丸*/
+  font-size: 15px;
+}
+
+
+
+.show-travel-wrapper{
+  height: 80px;
+  margin-top: 50px;
+  margin: 20px 60px;
+}
+
+.show-travel-note-title{
+  color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+
+
+.show-travel-note{
+  height: 350px;
+  
+}
+
+.show-note{
+  margin: 0px 0px 8px 80px;
+  width: 400px;
+  font-size: 15px;
+  padding: 0.3em 0.4em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+
+
+.show-note-content{
+  color: #505050;
+  text-decoration: none;
+}
