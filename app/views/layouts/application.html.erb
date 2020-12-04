@@ -13,8 +13,11 @@
   <body>
   
     <header>
-    <div class = "heading">
-      <h1><%= link_to "TRAVEL-NOTE", root_path, class: :title_logo %></h1>
+    <div class = "heading"> 
+        <%= image_tag "round-map.png", class: "header-image"%>
+        <%= link_to root_path, class: :title_logo do%>
+          <h1 class = title_logo-text>"TRAVEL<span>-</span>NOTE"</h1>
+        <%end%> 
     </div>
     <div class = "navbar">
       <ul class = "menu">
@@ -23,6 +26,9 @@
     </div>
   </header>
 
+
     <%= yield %>
+
+
   </body>
 </html>

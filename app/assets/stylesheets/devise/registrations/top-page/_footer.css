@@ -1,0 +1,29 @@
+.footer_title_logo-wrapper{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_title_logo{
+  text-decoration: none;
+  color: white;
+  background-color: #ffa600fb;
+  padding: 3px;
+  border-radius: 15px;
+  font-family: 'Chalkduster',sans-serif;
+  font-size: small;
+  font-size: 7px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.footer_title_logo-content{
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer_c{
+  font-size: 30px;
+  color: #67c5ff;
+}
