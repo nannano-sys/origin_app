@@ -1,12 +1,11 @@
 class TweetsController < ApplicationController
-
   def index
     @tweet = Tweet.new
     @tweets = Tweet.all.order('created_at DESC')
   end
 
   def new
-      @tweet = Tweet.new
+    @tweet = Tweet.new
   end
 
   def create
@@ -33,6 +32,7 @@ class TweetsController < ApplicationController
   end
 
   private
+
   def tweet_params
     params.require(:tweet).permit(:content, :title).merge(user_id: current_user.id)
   end

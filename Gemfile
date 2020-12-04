@@ -56,3 +56,7 @@ gem 'pry-rails'
 gem 'devise'
 gem 'active_hash'
 gem 'kaminari'
+
+group :development do
+  gem 'rubocop', require: false
+end
