@@ -10,6 +10,12 @@
   margin-top: 50px;
 }
 
+.user-top-page-header{
+  height: 30vh;
+  display: flex;
+  margin-top: 10px;
+}
+
 .tweet-content{
   list-style: none;
 }
