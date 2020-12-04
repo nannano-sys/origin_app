@@ -16,6 +16,11 @@
   font-size: 7px;
   text-align: center;
   margin-left: 5px;
+  transition: .4s;
+}
+
+.footer_title_logo:hover{
+  color: #C2EEFF;
 }
 
 .footer_title_logo-content{

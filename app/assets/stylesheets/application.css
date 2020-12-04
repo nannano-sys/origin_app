@@ -80,8 +80,15 @@ ul,li {
   font-family: 'Chalkduster',sans-serif;
   margin-left: 20px;
   text-decoration: none;
+  transition: .4s;
+}
+
+.title_logo-text:hover {
+  color:  #C2EEFF;
 }
 
 span{
   color: #C2EEFF;
 }
+
+
