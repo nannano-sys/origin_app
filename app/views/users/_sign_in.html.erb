@@ -1,4 +1,5 @@
 <% if user_signed_in?%>
+<b class = header-user-name><%= "こんにちは#{current_user.nickname}さん"%></b>
 <%= link_to 'マイページ', user_path(current_user), class: "mypage" %>
 <%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %>
 <% else %>
