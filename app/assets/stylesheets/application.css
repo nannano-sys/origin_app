@@ -38,9 +38,15 @@ ul,li {
 }
 
 .heading{
-  height: 50px;
   width: 50%;
   margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header-image{
+  width: 70px;
+  height: 70px;
 }
 
 
@@ -62,5 +68,20 @@ ul,li {
 
 .title_logo{
   text-decoration: none;
+}
+
+
+.title_logo-text{
+  text-decoration: none;
   color: white;
+  background-color: #ffa600fb;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Chalkduster',sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+span{
+  color: #C2EEFF;
 }

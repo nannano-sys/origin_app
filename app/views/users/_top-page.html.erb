@@ -43,26 +43,28 @@
             </div>
             <div class = log-in-sign-in-wrapper>
               <div class = log-in-sign-in-message-wrapper>
-                <div class = log-in-message>
-                  以下からログイン
-                </div>
                 <div class = ign-in-message>
                   アカウントをお持ちでないですか？
                 </div>
+                <div class = log-in-message>
+                  以下からログイン
+                </div>
               </div>
               <div class = log-in-sign-in-btn-wrapper>
-                <div class = log-in-btn-wrapper>
-                  <%= link_to 'ログイン', new_user_session_path, class: "log-in-btn"  %>
-                </div>
                 <div class = sign-in-btn-wrapper>
                   <%= link_to '新規登録', new_user_registration_path, class: "sign-in-btn"%>
+                </div>
+                <div class = log-in-btn-wrapper>
+                  <%= link_to 'ログイン', new_user_session_path, class: "log-in-btn"  %>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class = top-page-footer>
-      </div>
     </div>
+  
+    <footer>
+    <%= render "footer"%>
+    </footer>
   

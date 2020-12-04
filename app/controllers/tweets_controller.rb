@@ -14,7 +14,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to user_path(@tweet.user)
     else
-      render :index
+      render :new
     end
   end
 

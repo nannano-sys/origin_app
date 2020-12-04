@@ -1,13 +1,15 @@
 
 
 .users-index-background-wrapper{
-  background-color: #eeffff4b;
+  background-color: #eeffff56;
 }
+
 
 
 .wrapper{
   margin-top: 50px;
 }
+
 .tweet-content{
   list-style: none;
 }
@@ -60,7 +62,7 @@
 
 
 
-.wrapper{
+.user-index-wrapper{
   margin: 0px 100px;
 }
 

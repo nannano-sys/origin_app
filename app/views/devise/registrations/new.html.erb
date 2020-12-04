@@ -1,6 +1,6 @@
 
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 <div class = new-registration-wrapper>
 <div class = new-registration-container>
   <div class="container">
@@ -19,9 +19,8 @@
     </div>
       <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name,  {}, {class: "user-prefecture"}) %>
     </div>
-    <div class="message"></div>
     <div class = "sign-up-button-wrapper" id="submit" type="submit" >
-      <%= f.submit "Sign up", class: "new-session-log-in-btn", class: "sign-up-button" %>
+      <%= f.submit "Sign up", class: "new-registration-sign-up-btn", class: "sign-up-button" %>
     </div>
   </div>
 </div>
