@@ -10,9 +10,11 @@
        <div class = note-content-text>
          <%= @tweet.content%>
         </div>
-        <div class = travel-note-delete-btn-wrapper>
-        <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
+        <% if @tweet.user == current_user%>
+          <div class = travel-note-delete-btn-wrapper>
+          <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
         </div>
+        <%end%>
       </div>
       <div class = travel-note-list>
         <div class = travel-note-list-header>
