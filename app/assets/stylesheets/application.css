@@ -68,6 +68,8 @@ ul,li {
 
 .title_logo{
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 
