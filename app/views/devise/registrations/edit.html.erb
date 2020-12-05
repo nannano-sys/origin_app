@@ -11,9 +11,9 @@
       <h2>プロフィール編集</h2>
     </div>
     <div class = "ew-new-edit-wrapper">
-      <%= f.text_area :nickname, class:"new-edit-nickname", id:"nickname", placeholder:"例) トラベラー", maxlength:"10" %>
+      <%= f.text_area :nickname, class:"new-edit-nickname", id:"nickname", placeholder:"ユーザーネーム", maxlength:"10" %>
     </div>
-      <%= f.email_field :email, class:"new-edit-email", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+      <%= f.email_field :email, class:"new-edit-email", id:"email", placeholder:"Email", autofocus: true %>
       <%= f.password_field :current_password, autocomplete: "new-edit-password" ,placeholder:"Password(本人確認)"%>
     <div class = user-prefecture-wrapper>
     <div class = user-prefecture-text-wrapper>
