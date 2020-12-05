@@ -1,8 +1,13 @@
 <% if user_signed_in?%>
-<b class = header-user-name><%= "こんにちは#{current_user.nickname}さん"%></b>
-<%= link_to 'マイページ', user_path(current_user), class: "mypage" %>
-<%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %>
+  <b class = header-user-name><%= "こんにちは#{current_user.nickname}さん"%></b>
+  <%if current_page?(user_path(current_user))%>
+    <%= link_to 'トップページ', root_path, class: "mypage" %>
+    <%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %>
+  <% else %>
+    <%= link_to 'マイページ', user_path(current_user), class: "mypage" %>
+    <%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %>
+  <% end %>
 <% else %>
-<%= link_to '新規登録', new_user_registration_path, class: "new_registration"%>
-<%= link_to 'ログイン', new_user_session_path, class: "login"  %>
-<%end %>
+  <%= link_to '新規登録', new_user_registration_path, class: "new_registration"%>
+  <%= link_to 'ログイン', new_user_session_path, class: "login"  %>
+<% end %>
