@@ -3,7 +3,7 @@
 
 
 <%= form_with model: @user, url: registration_path(resource_name), local: true do |f| %>
-<%= render "devise/shared/error_messages", resource: resource %>
+<%= render "devise/shared/error_messages", model: @user %>
 <div class = new-edit-wrapper>
 <div class = new-edit-container>
   <div class="container">
