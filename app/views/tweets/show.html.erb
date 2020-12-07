@@ -21,7 +21,7 @@
         </div>
         <div class = travel-note-list-content>
           <% @tweets.each do |tweets|%>
-          <ul>
+          <ul class = "show-travel-note-list-large-wrapper">
             <li class = show-travel-note-list-wrapper>
               <%=link_to tweets.title, tweet_path(tweets), class: "show-travel-note-list-content"%>
             </li>
@@ -44,7 +44,7 @@
     <% @comments.each do |comment|%>
     <div class = comment-text-wrapper>
           <div class = travel-comment-user>
-            <%=link_to comment.user.nickname, user_path(comment.user.id)%>
+            <%=link_to comment.user.nickname, user_path(comment.user.id), class: "travel-comment-user-text"%>
           </div>
           <div class = travel-comment-text>
             <%= comment.text%>

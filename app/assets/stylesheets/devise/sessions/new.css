@@ -109,15 +109,9 @@ label.error {
     border-radius:6px;
 }
 
-/* media queries */
-@media (max-width: 700px) {
-}
-
-  label.error {
-    width: 90%;
-  }
   input, textarea {
     width: 90%;
+    height: 50px;
   }
   .Sign-up-button {
     width:90%;
