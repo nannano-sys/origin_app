@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
+#deviseのコントローラを編集したいので上記を書きます
   root "users#index"
     resources :tweets, only: [:index, :create, :destroy, :show, :new] do
       resources :comments, only:[:create]
