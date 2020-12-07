@@ -2,20 +2,20 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable
 
   has_many :tweets
   has_many :comments
   
   with_options presence: true do
-    validates :nickname, presence: {message: "Cant be blank！"}
-    validates :prefecture_id, presence: {massage: "Select！"}
-    validates :prefecture_id, numericality: {other_than: 1, massage: "Select！"}
+    validates :nickname, presence: {message: "が空欄だよ！"}
+    validates :email, presence: {message: "が空欄が空欄だよ！"}
+    validates :password, presence: {message: "が空欄だよ！"}
+    validates :prefecture_id, numericality: {other_than: 1, message: "が空欄だよ！"}
   end
-  
-    validates :age, numericality: {with: /\A[0-9]+\z/, message: "Half-width number"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
-    validates :profile, length: {maximum: 100}
-
+    
+    validates :age, numericality: {with: /\A[0-9]+\z/, message: "は数字で入れてね！秘密とかはナシだよ！"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
+    validates :profile, length: {maximum: 100, message: "が長すぎるよ！"}
   # ====================自分がフォローしているユーザーとの関連 ===================================
   # フォローする側からみて、フォローされる側のユーザー情報を取得する
   has_many :active_relationships, class_name: 'Relationship', foreign_key: 'following_id', dependent: :destroy
