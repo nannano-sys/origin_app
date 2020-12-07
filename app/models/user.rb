@@ -6,6 +6,15 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :comments
+  
+  with_options presence: true do
+    validates :nickname, presence: {message: "Cant be blank！"}
+    validates :prefecture_id, presence: {massage: "Select！"}
+    validates :prefecture_id, numericality: {other_than: 1, massage: "Select！"}
+  end
+  
+    validates :age, numericality: {with: /\A[0-9]+\z/, message: "Half-width number"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
+    validates :profile, length: {maximum: 100}
 
   # ====================自分がフォローしているユーザーとの関連 ===================================
   # フォローする側からみて、フォローされる側のユーザー情報を取得する
