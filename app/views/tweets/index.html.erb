@@ -1,4 +1,3 @@
-<h1>hello_traveler!</h1>
 <% if user_signed_in?%>
 hello!<%= link_to current_user.nickname, user_path(current_user)%>
 <h5><%= link_to 'ログアウト',destroy_user_session_path , method: :delete, class: "logout" %></h5>
