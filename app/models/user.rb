@@ -2,20 +2,21 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable
+         :recoverable, :rememberable, :validatable
 
   has_many :tweets
   has_many :comments
   
   # ====================バリデーーーーション ===================================
   with_options presence: true do
-    validates :nickname, presence: {message: "が空欄だよ！"}
-    validates :email, presence: {message: "が空欄が空欄だよ！"}
-    validates :password, presence: {message: "が空欄だよ！"}, on: :create
-    validates :prefecture_id, numericality: {other_than: 1, message: "が空欄だよ！"}
+    validates :nickname
+    validates :email
+    validates :password, on: :create
+    validates :password_confirmation, on: :create
+    validates :prefecture_id, numericality: {other_than: 1, message: "を入力してください"}
   end
-    validates :age, numericality: {with: /\A[0-9]+\z/, message: "は数字で入れてね！秘密とかはナシだよ！"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
-    validates :profile, length: {maximum: 100, message: "が長すぎるよ！"}
+    validates :age, numericality: {with: /\A[0-9]+\z/, message: "は半角数字で入れてください"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
+    validates :profile, length: {maximum: 100, message: "が長すぎます"}
 # ====================バリデーショーーーン ===================================
 
 
@@ -26,7 +27,7 @@ class User < ApplicationRecord
 
   # ========================================================================================
 
-  
+
 
   # ====================自分がフォローされているユーザーとの関連 ===================================
   # フォローされる側のユーザから見て、フォローしている側のユーザー情報を取得する
