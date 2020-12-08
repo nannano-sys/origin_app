@@ -60,3 +60,4 @@ gem 'kaminari'
 group :development do
   gem 'rubocop', require: false
 end
+gem 'rails-i18n'

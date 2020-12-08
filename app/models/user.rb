@@ -6,6 +6,19 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :comments
+  
+  # ====================バリデーーーーション ===================================
+  with_options presence: true do
+    validates :nickname
+    validates :email
+    validates :password, on: :create
+    validates :password_confirmation, on: :create
+    validates :prefecture_id, numericality: {other_than: 1, message: "を入力してください"}
+  end
+    validates :age, numericality: {with: /\A[0-9]+\z/, message: "は半角数字で入れてください"}, allow_blank: true #空欄の場合にはバリデーションをスキップする
+    validates :profile, length: {maximum: 100, message: "が長すぎます"}
+# ====================バリデーショーーーン ===================================
+
 
   # ====================自分がフォローしているユーザーとの関連 ===================================
   # フォローする側からみて、フォローされる側のユーザー情報を取得する
@@ -13,6 +26,8 @@ class User < ApplicationRecord
   has_many :followings, through: :active_relationships, source: :follower
 
   # ========================================================================================
+
+
 
   # ====================自分がフォローされているユーザーとの関連 ===================================
   # フォローされる側のユーザから見て、フォローしている側のユーザー情報を取得する

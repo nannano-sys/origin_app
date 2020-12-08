@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       email: メールアドレス
+       password: パスワード
+       password_confirmation: 確認用パスワード
+       prefecture_id: 出身地
+       age: 年齢
+       hoby: 趣味
+       want: 行きたいところ
+       profile: プロフィール
+     tweet:
+       title: タイトル
+       content: ノート

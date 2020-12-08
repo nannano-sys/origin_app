@@ -1,6 +1,7 @@
 
 
 <%= form_with model: @tweet, local: true do |f| %>
+<%= render "shared/tweet_error_messages", model: @tweet %>
 <div class = "form-area">
   <div class = "title-form">
   <%= f.text_area :title, class:"title-text", id:"tweet_title", placeholder:"例：秋田旅行をしました！", maxlength:"100" %>
