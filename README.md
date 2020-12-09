@@ -53,8 +53,8 @@
 
 | Column             | Type       | Options                                     |
 | ------------------ | ---------- | ------------------------------------------- |
-| following          | integer    |                                             |
-| follower           | integer    |                                             |
+| following_id       | integer    |                                             |
+| follower_id        | integer    |                                             |
 
 ### Association
 - belongs_to :following, class_name: "User"

@@ -1,8 +1,7 @@
 class CommentsController < ApplicationController
   def create
-    @comment = Comment.create(comment_params)
-    if @comment.save
-      redirect_to tweet_path(@comment.tweet)
+    if @comments = Comment.create(comment_params)
+      redirect_to tweet_path(@comments.tweet)
     else
       render :show
     end

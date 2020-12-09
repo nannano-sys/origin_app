@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-12-04T06:25:40.424Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="Xff61xuq8ddXiohtU2F6" version="13.10.0" type="embed">
+<mxfile host="65bd71144e" modified="2020-12-09T01:59:00.385Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="ctivrAtG0_aVcUNkcOeh" version="13.10.0" type="embed">
     <diagram id="1WxObhL75DgF3pNxswcC" name="ページ1">
         <mxGraphModel dx="522" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -80,9 +80,6 @@
                 </mxCell>
                 <mxCell id="55" value="belongs_to :following, class_name: &quot;User&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1">
                     <mxGeometry x="50" y="810" width="250" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERoneToMany;startFill=0;endArrow=ERoneToMany;endFill=0;" edge="1" parent="1" source="56" target="55">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="belongs_to :follower, class_name: &quot;User&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1">
                     <mxGeometry x="50" y="840" width="310" height="26" as="geometry"/>

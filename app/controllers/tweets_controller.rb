@@ -1,9 +1,5 @@
 class TweetsController < ApplicationController
-  def index
-    @tweet = Tweet.new
-    @tweets = Tweet.all.order('created_at DESC')
-  end
-
+  
   def new
     @tweet = Tweet.new
   end
@@ -13,7 +9,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to user_path(@tweet.user)
     else
-      render :new
+      redirect_to new_tweet_path(@tweet)
     end
   end
 
