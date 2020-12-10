@@ -1,4 +1,8 @@
 class TweetsController < ApplicationController
+
+  def index
+    redirect_to new_tweet_path #更新でindexに戻るのを防ぐ
+  end
   
   def new
     @tweet = Tweet.new
@@ -9,7 +13,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to user_path(@tweet.user)
     else
-      redirect_to new_tweet_path(@tweet)
+      render :new
     end
   end
 
