@@ -10,15 +10,11 @@
   width:500px;
   margin:0 auto;
   text-align:center;
-  -webkit-border-radius:6px;
-  -moz-border-radius:6px;
   border-radius:6px;
   background-color:#FAFAFA;
 }
 
 .head {
-  -webkit-border-radius:6px 6px 0px 0px;
-  -moz-border-radius:6px 6px 0px 0px;
   border-radius:6px 6px 0px 0px;
   background-color: #67c5ff;
   color:#FAFAFA;
@@ -47,40 +43,21 @@ input, textarea {
   border: 1px solid #cecece;
   background: #d7d7d7;
   color:#FAFAFA;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 80%;
   max-width: 600px;
 }
 
-::-webkit-input-placeholder {
+.input-placeholder {
    color: #FAFAFA;
 }
 
-:-moz-placeholder {
-   color: #FAFAFA;  
-}
-
-::-moz-placeholder {
-   color: #FAFAFA; 
-}
-
-:-ms-input-placeholder {  
-   color: #FAFAFA;  
-}
 
 .log-in-button {
   margin-top:15px;
   margin-bottom:25px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   transition: .5s;
   display: inline-block;
