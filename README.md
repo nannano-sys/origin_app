@@ -1,19 +1,19 @@
 # README
 
 
-## アプリ名
+# アプリ名
 トラベルノート
 
 
 
-## 概要
+# 概要
 ・ツイート投稿(トラベルノートという名称で、タイトルとテキストを投稿します)
 ・コメント機能
 ・フォロー機能
 
 
 
-## 本番環境
+# 本番環境
 
 アプリURL
 　https://origin-app-travel-note.herokuapp.com/
@@ -24,7 +24,7 @@
 ・email: sam@sam.com
 
 
-## 製作背景 (意図)
+# 製作背景 (意図)
  トラベルノートとは、旅行記録をまとめるノートのことです。このサイトは、ユーザー一人一人の記録をトラベルノートのようにまとめ、それを共有できるサイトです。
 
 旅行好きのユーザのためのサイト
@@ -39,37 +39,40 @@
 
 
 
-## DEMO
+# DEMO
 
-# メインページ
+## トップページ
 <img width="1259" alt="f41a46897740c9d3cf0dd54f2ae3b3ff" src="https://user-images.githubusercontent.com/72584707/102202872-2ef60f80-3f0b-11eb-9a9b-f859957a5f28.png">
 ログインしていない状態は、この画面が表示されます。
 
 
-# ログインぺージ
+## ログインぺージ
 <img width="1189" alt="8e35c8d084b0d9048baaaa0b4cd3f8f6" src="https://user-images.githubusercontent.com/72584707/102203249-b04da200-3f0b-11eb-83a6-841f16421444.png">
 ログインページです。ちなみに、新規登録ページはオレンジ色です
 
 
-#　メインページ
-<img width="1189" alt="8e35c8d084b0d9048baaaa0b4cd3f8f6" src="https://user-images.githubusercontent.com/72584707/102203506-04588680-3f0c-11eb-849b-b37c121608b0.png">
+## メインページ
+<img width="1259" alt="9a3eab40fa9d86e296af5bd803a30b95" src="https://user-images.githubusercontent.com/72584707/102205309-5c908800-3f0e-11eb-9ad3-904b8abb3faa.png">
 ユーザーが最初に訪れるページです。ユーザー一覧が表示されています。
 
 
-# ユーザーページ
-<img width="1189" alt="8e35c8d084b0d9048baaaa0b4cd3f8f6" src="https://user-images.githubusercontent.com/72584707/102203734-4b467c00-3f0c-11eb-9d44-7feb80856d15.png">
+## ユーザーページ
+<img width="1237" alt="ユーザーページ" src="https://user-images.githubusercontent.com/72584707/102205581-b98c3e00-3f0e-11eb-8437-5d75195c247b.png">
+
 ユーザーの詳細ページです。プロフィール編集、フォロー、トラベルノートの参照などは基本このページで行います
 
 
-# ノート詳細ページ
-<img width="1189" alt="8e35c8d084b0d9048baaaa0b4cd3f8f6" src="https://user-images.githubusercontent.com/72584707/102204129-cc057800-3f0c-11eb-86cc-0ced43fe5e70.png">
+## ノート詳細ページ
+<img width="1254" alt="f6a3d4ecd2877ecfd366e26811f2d8ee" src="https://user-images.githubusercontent.com/72584707/102205648-d163c200-3f0e-11eb-9ea3-1e29a06d036c.png">
 
-<img width="1189" alt="8e35c8d084b0d9048baaaa0b4cd3f8f6" src="https://user-images.githubusercontent.com/72584707/102204237-f48d7200-3f0c-11eb-9247-edbe0935bb9c.png">
+<img width="1234" alt="834ebbc1632a281324e1d839a5b4446a" src="https://user-images.githubusercontent.com/72584707/102205729-eb9da000-3f0e-11eb-9034-b63e1463a421.png">
+
+
 トラベルノートの詳細ページです。コメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。
 
 
 
-## 工夫したポイント
+# 工夫したポイント
 
 ・サイトをカラフルにして、見た目をたのしく
 　　見る人を飽きさせ無いサイトにしようと決めており、デザインをカラフルにしたいと思っていました。様々なカラーを試しましたが、ビビットな色合い　より、スッと目に入る優しい色の方が良いと考えました。パステル系の色で統一し、それでいて賑やかな色合いのサイトにできたと思います。
@@ -88,18 +91,18 @@
 
 
 
-## 開発環境
+# 開発環境
 　ruby on rails, MySQL, HTML, CSS
 
 
-## 課題、今後実装予定の機能
+# 課題、今後実装予定の機能
 ・画像添付機能
 　　投稿したトラベルノートや、ユーザーのプロフ画像として、画像を添付できる機能を実装します。
 ・非同期通信での投稿
 　　JavaScriptを用いて、Ajax環境を実現し、快適に使用できるよう改良します。
 
 
-## DB設計
+# DB設計
 
 <img width="625" alt="2e4ef815a9acecd5e4940cc12947aa32" src="https://user-images.githubusercontent.com/72584707/102205097-0c192a80-3f0e-11eb-8bfa-74ba59252c2f.png">
 
