@@ -38,7 +38,8 @@
 
 
 ## DEMO
-![トップページ](https://gyazo.com/0331448159601d2cf38151c753684506)
+<img width="1259" alt="f41a46897740c9d3cf0dd54f2ae3b3ff" src="https://user-images.githubusercontent.com/72584707/102202872-2ef60f80-3f0b-11eb-9a9b-f859957a5f28.png">
+
 ログインしていない状態は、この画面が表示されます。
 
 ![メインページ](https://gyazo.com/feed68c87c8949ea11e9eaa1a4f29d64)
