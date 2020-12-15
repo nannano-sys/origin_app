@@ -38,7 +38,7 @@
 
 
 ## DEMO
-![トップページ](https://origin-app-travel-note.herokuapp.com/)
+![トップページ](https://gyazo.com/0331448159601d2cf38151c753684506)
 ログインしていない状態は、この画面が表示されます。
 
 ![メインページ](https://gyazo.com/feed68c87c8949ea11e9eaa1a4f29d64)
