@@ -1,5 +1,9 @@
 # README
 
+![ロゴ (1)](https://user-images.githubusercontent.com/72584707/102211710-58b53380-3f17-11eb-803f-0bb21c759cf1.jpg)
+
+
+
 
 # アプリ名
 トラベルノート
