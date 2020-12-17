@@ -54,7 +54,7 @@ input, textarea {
    color: #FAFAFA;
 }
 
-.log-in-button {
+.update-button {
   margin-top:15px;
   margin-bottom:25px;
   border-radius: 5px;
@@ -88,3 +88,33 @@ input, textarea {
 .user-prefecture{
   margin-bottom: 10px;
 }
+
+.new-edit-avatar{
+  background-color: #ffa60033;
+}
+
+.new-edit-avatar-wrapper{
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.avater-input-btn{
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  background-color: #ffa60054;
+  color:#fff;
+  padding: 5px;
+  font-size: small;
+  border-radius: 5px;
+  transition: .4s;
+}
+
+.avater-input-btn:hover{
+  background-color: #67c5ff;
+}
+
+.new-edit-avatar{
+  display: none;
+}
+

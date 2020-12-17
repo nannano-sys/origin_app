@@ -25,6 +25,10 @@
     <%= f.text_field :hoby, class:"new-edit-hoby", placeholder:"趣味：趣味を共有しましょう！" %>
     <%= f.text_field :want, class:"new-edit-want", placeholder:"行きたいところ：行きたいところは？仲間が見つかるかも！" %>
     <%= f.text_field :profile, class:"new-edit-profile", placeholder:"自己紹介：あなたのことをみんなに知ってもらいましょう！" %>
+    <div class = "new-edit-avatar-wrapper">
+    <%= f.label :avatar, "プロフィール画像を選択", class: "avater-input-btn"%>
+    <%= f.file_field :avatar, class:"new-edit-avatar"%>
+    </div>
     <div class = "update-button-wrapper" id="submit" type="submit" >
       <%= f.submit "Update", class: "update-button" %>
     </div>
