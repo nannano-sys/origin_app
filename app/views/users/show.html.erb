@@ -5,7 +5,7 @@
             <%if @user.avatar.attached?%>
               <%= image_tag @user.avatar.variant(resize: "70x70"), class: "user-show-avatar-image"%>
             <% else %>
-              <%= image_tag "no-image", class: "no-avatar-image-show"%>
+              <%= image_tag "no-image.png", class: "no-avatar-image-show"%>
             <% end %>
           </div>
           <div class = show-user-name>
