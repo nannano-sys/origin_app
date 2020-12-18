@@ -21,7 +21,14 @@
         <%end%> 
     </div>
     <div class = "navbar">
-      <ul class = "menu">
+      <% if user_signed_in?%>
+        <% if current_user.avatar.attached?%>
+  　       <b class = header-user-avatar-wrapper><%= image_tag current_user.avatar.variant(resize: "70x70"), class: "header-user-avatar"%></b>
+        <%else%>
+           <b class = header-user-avatar-wrapper><%= image_tag "no-image.png", class: "header-user-avatar"%></b>
+        <% end %>
+      <%end%>
+      <ul class = "menu"> 
         <li class = "menu-list"><%= render 'users/sign_in',  locals: {user: @user}%></li>
       </ul>
     </div>

@@ -1,9 +1,4 @@
 <% if user_signed_in?%>
-   <% if current_user.avatar.attached?%>
-  　<b class = header-user-avatar-wrapper><%= image_tag current_user.avatar.variant(resize: "70x70"), class: "header-user-avatar"%></b>
-   <%else%>
-    <b class = header-user-avatar-wrapper><%= image_tag "no-image.png", class: "header-user-avatar"%></b>
-   <% end %>
   <div class = header-user-menu-wrapper>
   <b class = header-user-name>
   　<b class = hello-user-name><%= "こんにちは#{current_user.nickname}さん"%></b>

@@ -12,11 +12,11 @@
   border-radius: 4px;/*角の丸み*/
   box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
   font-weight: bold;
+  transition: .4s;
 }
 
-.edit-user-btn {
-  border-bottom: solid 2px #0b0235;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+.edit-user-btn:hover {
+  background-color: #ffa600cb;
 }
 
 .edit-btn-text{
