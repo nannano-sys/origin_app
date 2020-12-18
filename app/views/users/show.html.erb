@@ -15,7 +15,7 @@
             <%= render partial: "follow_btn", locals: {user: @user}%> 
         
         </div>
-
+       <div class = user-show-detail-wrapper>
         <div class = show-follow_follower>
           <div class = show-follow>
             <%= link_to "フォロー数 :#{@user.followings.count}", follows_user_path(@user),class: "show-follow_count" %>
@@ -48,6 +48,7 @@
               <%= @user.profile%>
             <%end%>
           </div>
+        </div>
         
       </div>
       <div class = show-main-bar>
