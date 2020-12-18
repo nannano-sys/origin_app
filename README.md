@@ -63,7 +63,7 @@
 
 
 ## メインページ
-<img width="1259" alt="9a3eab40fa9d86e296af5bd803a30b95" src="https://user-images.githubusercontent.com/72584707/102205309-5c908800-3f0e-11eb-9ad3-904b8abb3faa.png">
+<img width="1254" alt="toppage-gyazo" src="https://user-images.githubusercontent.com/72584707/102564792-84a30580-411f-11eb-9242-18244e4cf6b8.png">
 ユーザーが最初に訪れるページです。ユーザー一覧が表示されています。
 
 
