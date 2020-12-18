@@ -63,13 +63,12 @@
 
 
 ## メインページ
-<img width="1254" alt="toppage-gyazo" src="https://user-images.githubusercontent.com/72584707/102564792-84a30580-411f-11eb-9242-18244e4cf6b8.png">
+<img width="1236" alt="main-page" src="https://user-images.githubusercontent.com/72584707/102585249-68b55900-414b-11eb-8182-be3e417b1e1b.png">
 ユーザーが最初に訪れるページです。ユーザー一覧が表示されています。
 
 
 ## ユーザーページ
-<img width="1237" alt="ユーザーページ" src="https://user-images.githubusercontent.com/72584707/102205581-b98c3e00-3f0e-11eb-8437-5d75195c247b.png">
-
+<img width="1251" alt="my-page" src="https://user-images.githubusercontent.com/72584707/102585280-79fe6580-414b-11eb-90d3-2736dba724e9.png">
 ユーザーの詳細ページです。プロフィール編集、フォロー、トラベルノートの参照などは基本このページで行います
 
 
