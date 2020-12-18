@@ -141,9 +141,6 @@ li{
 
 .user-avatar-image{
   border-radius: 40px;
+  height: 180px; /* valiantでリサイズした場合には、元の写真の大きさに引っ張られるらしい */
+  width: 180px; /* valiantでリサイズした場合には、元の写真の大きさに引っ張られるらしい */
 }
-
-
-
-
-
