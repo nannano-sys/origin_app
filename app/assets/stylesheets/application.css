@@ -55,6 +55,8 @@ ul,li {
 .navbar{
   height: 100％;
   width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .menu{

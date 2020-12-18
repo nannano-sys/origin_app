@@ -43,7 +43,8 @@
   display: flex;
   align-items: center;
   background-color: white;
-  margin-left: 20px;
+  margin-left: 10px;
+  background-color: #fd963538;
 }
 
 .show-user-name-text{
@@ -174,4 +175,17 @@
 .show-note-content{
   color: #505050;
   text-decoration: none;
+}
+
+.user-show-avatar-image{
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.no-avatar-image-show{
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
 }

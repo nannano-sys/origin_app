@@ -1,6 +1,13 @@
 <div class = show-wrapper>
       <div class = show-side-bar>
         <div class = "show-name-wrapper">
+          <div class = "user-show-avatar-image-wrapper">
+            <%if @user.avatar.attached?%>
+              <%= image_tag @user.avatar.variant(resize: "70x70"), class: "user-show-avatar-image"%>
+            <% else %>
+              <%= image_tag "no-image", class: "no-avatar-image-show"%>
+            <% end %>
+          </div>
           <div class = show-user-name>
             <div class = "show-user-name-text"><%= @user.nickname%></div>
           </div>
