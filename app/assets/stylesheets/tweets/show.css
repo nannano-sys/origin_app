@@ -16,11 +16,16 @@
 }
 
 .note-content{
-  height: 100vh;
+  height: 110vh;
   width: 800px;
   background-color: #ffa6002c;
   border-radius: 20px;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+
 }
 
 .travel-note-list{
@@ -56,8 +61,6 @@
 
 .travel-note-delete-btn{
   height: 20px;
-  position: absolute;
-  top: 40px;
   display: inline-block;
   padding: 0.25em 0.5em;
   text-decoration: none;
@@ -69,6 +72,8 @@
   font-weight: bold;
   margin-left: 20px;
 }
+
+
 
 .travel-note-delete-btn:active {
   border-bottom: solid 2px #fd9535;
@@ -202,4 +207,32 @@
 .travel-comment-text p {
   margin: 0;
   padding: 0;
+}
+
+.tweet-show-image{
+  height: 200px;
+  width: 350px;
+  margin: 0px 20px 35px 0px;
+  transform: rotate(-10deg);
+  position: relative;
+  box-shadow: 10px 8px 10px -5px;
+}
+
+.tweet-show-clip-image-wrapper{
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 87%;
+}
+
+.clip-image{
+  height: 100px;
+  width: 100px;
+  transform: rotate(26deg);
+}
+
+.tweet-show-image-content{
+  height: 200px;
+  width: 350px;
 }
