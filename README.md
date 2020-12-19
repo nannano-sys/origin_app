@@ -73,12 +73,12 @@
 
 
 ## ノート詳細ページ
-<img width="1254" alt="f6a3d4ecd2877ecfd366e26811f2d8ee" src="https://user-images.githubusercontent.com/72584707/102205648-d163c200-3f0e-11eb-9ea3-1e29a06d036c.png">
+<img width="1258" alt="tweet_detail1" src="https://user-images.githubusercontent.com/72584707/102680989-dd969a80-4200-11eb-882f-10fdec5b71a9.png">
 
-<img width="1234" alt="834ebbc1632a281324e1d839a5b4446a" src="https://user-images.githubusercontent.com/72584707/102205729-eb9da000-3f0e-11eb-9034-b63e1463a421.png">
+<img width="1257" alt="tweet_detail2" src="https://user-images.githubusercontent.com/72584707/102681001-fa32d280-4200-11eb-8f63-83850f3b5d41.png">
 
 
-トラベルノートの詳細ページです。コメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。
+トラベルノートの詳細ページです。コメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。画像の添付をすると、クリップで留めた写真のように表示され、トラベルノート感が倍増します。
 
 
 
