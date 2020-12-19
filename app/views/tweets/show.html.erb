@@ -4,17 +4,27 @@
        <div class = note-title-text>
           <%= @tweet.title%>
        </div>
+       <% if @tweet.user == current_user%>
+          <div class = travel-note-delete-btn-wrapper>
+          <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
+        </div>
+        <%end%>
      </div>
     <div class = note-content-wrapper>
      <div class = note-content>
        <div class = note-content-text>
          <%= @tweet.content%>
         </div>
-        <% if @tweet.user == current_user%>
-          <div class = travel-note-delete-btn-wrapper>
-          <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
-        </div>
-        <%end%>
+        <% if @tweet.image.attached?%>
+          <div class = "tweet-show-image-wrapper">
+            <div class = "tweet-show-image">
+              <%= image_tag @tweet.image.variant(resize: '200x350'), class: "tweet-show-image-content"%>
+            <div class = tweet-show-clip-image-wrapper>
+              <%= image_tag "clip-image.png",class: "clip-image" %>
+            </div>
+          </div>
+         </div>
+        <% end %>
       </div>
       <div class = travel-note-list>
         <div class = travel-note-list-header>
