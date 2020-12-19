@@ -78,10 +78,10 @@
 ## ノート詳細ページ
 <img width="1258" alt="tweet_detail1" src="https://user-images.githubusercontent.com/72584707/102680989-dd969a80-4200-11eb-882f-10fdec5b71a9.png">
 
-<img width="1257" alt="tweet_detail2" src="https://user-images.githubusercontent.com/72584707/102681001-fa32d280-4200-11eb-8f63-83850f3b5d41.png">
+<img width="1251" alt="tweet-show" src="https://user-images.githubusercontent.com/72584707/102688195-5c5afa00-4238-11eb-9a45-0ff1f172d7a6.png">
 
 
-トラベルノートの詳細ページです。コメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。画像の添付をすると、クリップで留めた写真のように表示され、トラベルノート感が倍増します。
+トラベルノートの詳細ページです。コメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。画像の添付をすると、クリップで留めた写真のように表示され、トラベルノート感が倍増します。パスポートスタンプにはシドニーと書いありますが、気にしてはいけません。(素材の都合)
 
 
 
