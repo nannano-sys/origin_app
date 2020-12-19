@@ -88,3 +88,32 @@ header{
   background: #FF8C00;
   color: white;
 }
+
+.new-edit-avatar{
+  background-color: #ffa60033;
+}
+
+.new-tweet-image-wrapper{
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.new-tweet-image-btn{
+  position: absolute;
+  top: 30%;
+  left: 44%;
+  background-color: #ffa60054;
+  color:#fff;
+  padding: 5px;
+  font-size: small;
+  border-radius: 5px;
+  transition: .4s;
+}
+
+.new-tweet-input-btn:hover{
+  background-color: #67c5ff;
+}
+
+.new-tweet-image{
+  display: none;
+}

@@ -7,5 +7,5 @@ class Tweet < ApplicationRecord
 
   belongs_to :user
   has_many :comments, dependent: :destroy
-  # has_many_attached :image 複数のファイルを各レコードと紐付ける記述
+  has_one_attached :image
 end
