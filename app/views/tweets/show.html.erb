@@ -15,6 +15,11 @@
        <div class = note-content-text>
          <%= @tweet.content%>
         </div>
+        <div class = "passport-stamp-wrapper">
+          <div class = "passprt-stamp">
+            <%= image_tag "stamp.png", class: "stamp"%>
+          </div>
+        </div>
         <% if @tweet.image.attached?%>
           <div class = "tweet-show-image-wrapper">
             <div class = "tweet-show-image">

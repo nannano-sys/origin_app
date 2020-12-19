@@ -236,3 +236,17 @@
   height: 200px;
   width: 350px;
 }
+
+.passprt-stamp{
+  height: 155px;
+  width: 155px;
+  position: absolute;
+  top: 70%;
+  right: 76%;
+  transform: rotate(-25deg);
+}
+
+.stamp{
+  height: 200px;
+  width: 200px;
+}
