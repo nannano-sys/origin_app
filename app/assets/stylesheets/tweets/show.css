@@ -25,7 +25,9 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-
+  background: linear-gradient(#ccc 1px, transparent 1px) #fffbf2;
+  background-size: auto 2em;
+  line-height: 2.2em;
 }
 
 .travel-note-list{
