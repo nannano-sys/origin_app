@@ -13,7 +13,7 @@
     <div class = note-content-wrapper>
      <div class = note-content>
        <div class = note-content-text>
-         <%= @tweet.content%>
+         <%= safe_join(@tweet.content.split("\n"), tag(:br)) %>
         </div>
         <div class = "passport-stamp-wrapper">
           <div class = "passprt-stamp">
