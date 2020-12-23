@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   }
 #deviseのコントローラを編集したいので上記を書きます
   root "users#index"
-    resources :tweets, only: [:index, :create, :destroy, :show, :new] do
+    resources :tweets do
       resources :comments, only:[:create]
     end
    

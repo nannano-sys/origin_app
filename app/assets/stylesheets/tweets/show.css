@@ -55,7 +55,7 @@
 .travel-note-delete-btn-wrapper{
   margin-right: 20px;
   height: 40px;
-  width: 70px;
+  width: 200px;
   display: flex;
   justify-content: flex-end;
   float: right;
@@ -69,6 +69,20 @@
   color: #FFF;
   background: #fd9535;/*背景色*/
   border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.travel-note-edit-btn{
+  height: 20px;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background:  #67c5ff7c;/*背景色*/
+  border-bottom: solid 2px  #67aeff;/*少し濃い目の色に*/
   border-radius: 4px;/*角の丸み*/
   box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
   font-weight: bold;

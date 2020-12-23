@@ -7,6 +7,7 @@
        <% if @tweet.user == current_user%>
           <div class = travel-note-delete-btn-wrapper>
           <%= link_to "削除", tweet_path, method: :delete, class: "travel-note-delete-btn"%>
+          <%= link_to "編集", edit_tweet_path, class: "travel-note-edit-btn"%>
         </div>
         <%end%>
      </div>
