@@ -125,7 +125,8 @@ JavaScriptを用いて、Ajax環境を実現し、快適に使用できるよう
 
 # DB設計
 
-<img width="625" alt="2e4ef815a9acecd5e4940cc12947aa32" src="https://user-images.githubusercontent.com/72584707/102205097-0c192a80-3f0e-11eb-8bfa-74ba59252c2f.png">
+<img width="625" alt="ER図" src="https://user-images.githubusercontent.com/72584707/102946918-69603d80-4505-11eb-9aee-9d45eb13128d.png">
+
 
 
 
