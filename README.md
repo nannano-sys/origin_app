@@ -79,7 +79,8 @@
 
 <img width="1258" alt="note1" src="https://user-images.githubusercontent.com/72584707/102948044-471bef00-4508-11eb-8b10-3ca25cbbfd06.png">
 
-<img width="1157" alt="note2" src="https://user-images.githubusercontent.com/72584707/102948070-5bf88280-4508-11eb-8a9a-b56e0140240e.png">
+<img width="1259" alt="note3" src="https://user-images.githubusercontent.com/72584707/102967711-e1def280-4535-11eb-92c1-5fec6ea9044a.png">
+
 
 
 トラベルノートの詳細ページです。罫線の表示されたノートのような見た目の背景に、記事が反映されます。このページではコメントをすることができます。また、サイドバーにはユーザーのトラベルノート一覧が表示されています。画像の添付をすると、クリップで留めた写真のように表示され、トラベルノート感が倍増します。パスポートスタンプにはシドニーと書いありますが、気にしてはいけません。(素材の都合)
