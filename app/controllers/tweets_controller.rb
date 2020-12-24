@@ -26,11 +26,10 @@ class TweetsController < ApplicationController
   end
 
   def edit
-    tweet = Tweet.find(params[:id])
-    unless user_signed_in? && current_user.id == tweet.user.id
+    @tweet = Tweet.find(params[:id])
+    unless user_signed_in? && current_user.id == @tweet.user.id
       redirect_to root_path
     end
-    @tweet = Tweet.find(params[:id]) 
   end
 
   def update
