@@ -1,0 +1,19 @@
+
+<%= form_with model: @tweet, local: true do |f| %>
+<%= render "shared/error_messages", model: @tweet %>
+<div class = "form-area">
+  <div class = "title-form">
+  <%= f.text_area :title, class:"title-text", id:"tweet_title", placeholder:"例：秋田旅行をしました！", maxlength:"100" %>
+  </div>
+  <div class = tweet-form>
+  <%= f.text_area :content, class:"tweet-text", id:"tweet_content", placeholder:"どんなことをしましたか？あなたの記録を共有しましょう", maxlength:"500" %>
+  </div>
+  <div class = "new-tweet-image-wrapper">
+    <%= f.label :image, "写真を添付できます！", class: "new-tweet-image-btn"%>
+    <%= f.file_field :image, class:"new-tweet-image"%>
+  </div>
+  <div class = "btn">
+  <%= f.submit "tweet!" ,class:"send-btn" %>
+  </div>
+</div>
+<%end%>
