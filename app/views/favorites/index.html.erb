@@ -1,0 +1,43 @@
+<% @tweet.favorite_users.each.each do |user| %>
+    <div class = "user_wrapper">
+    <div class = "user-name-info">ユーザ名：<%= link_to user.nickname, user_path(user), class: "user-name"%></div>
+        <% if user.followed_by?(current_user) %>
+    <b class = "follow？">フォロー済</b>
+        <%end%>
+<div class = user-prof-wrapper>
+ <div class = "user-avatar">
+  <% if user.avatar.attached?%>
+    <%= image_tag user.avatar.variant(resize: '180x180'), class: 'user-avatar-image'%>
+  <%else%>
+    <%= image_tag "no-image.png", class: "no-avatar-image"%>
+  <%end%>
+ </div>
+    
+ <div class = "user-prof">
+      
+    <ul class = "users_list">
+        <li class = "profile">プロフィール</li>
+        <div class = "list-content">
+        <li>出身 : <%= user.prefecture.name%></li>
+    <%if user.age.present?%>
+        <li>年齢：<%= user.age%></li>
+    <%end%>
+    <% if user.hoby.present? %>
+        <li>趣味：<%= user.hoby%></li>
+    <%end%>
+    <% if user.want.present? %>
+        <li>行きたい場所：<%= user.want%></li>
+    <%end%>
+    <%if user.profile.present?%>
+        <li class = plof><%= user.profile%></li>
+    <%end%>
+    </div>
+    </ul>
+ </div>
+</div>
+<%= link_to(new_tweet_path, class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>ノートを書く</span>
+  <%= image_tag 'pen.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+<%end%>
+</div>
