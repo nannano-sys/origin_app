@@ -8,4 +8,9 @@ class Tweet < ApplicationRecord
   belongs_to :user
   has_many :comments, dependent: :destroy
   has_one_attached :image
+
+# ====================いいね機能===================================
+  has_many :favorites, dependent: :destroy
+  has_many :favorite_users, through: :favorites, source: :user
+# =========================================================================
 end

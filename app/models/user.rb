@@ -24,6 +24,12 @@ class User < ApplicationRecord
 # =========================================================================
 
 
+# ====================いいね機能===================================
+   has_many :favorites, dependent: :destroy
+   has_many :favorite_tweets, through: :favorites, source: :tweets
+# =========================================================================
+
+
   # ====================自分がフォローしているユーザーとの関連 ===================================
   # フォローする側からみて、フォローされる側のユーザー情報を取得する
   has_many :active_relationships, class_name: 'Relationship', foreign_key: 'following_id', dependent: :destroy
@@ -47,6 +53,10 @@ class User < ApplicationRecord
     # 今自分(引数のuser)がフォローしようとしているユーザー(レシーバー)の「フォローされているユーザー(つまりpassive)」の中に、引数に渡されたユーザー(自分)がいるかどうかを調べる
     # すなわち、すでにフォローしているユーザーかそうでないかを調べるインスタンスメソッド
     passive_relationships.find_by(following_id: user.id).present?
+  end
+
+  def favorite_by?(tweet)
+    favorites.where(tweet_id: tweet.id).exists?
   end
 
   extend ActiveHash::Associations::ActiveRecordExtensions
