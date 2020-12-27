@@ -50,14 +50,14 @@
       <% unless @tweet.user.id == current_user.id%>
         <%unless current_user.favorite_by?(@tweet) %>
             <%= link_to tweet_favorites_path(@tweet), method: :post, class: "favorite-text-image" do%>
-              <%= image_tag "favo1.png", class: "favo-image"%>
+              <%= image_tag "favo2.png", class: "favo-image"%>
               <div class = favo-text>
               いいね
               </div>
             <% end %>
           <%else%>
          <%= link_to tweet_favorite_path(@tweet), method: :delete, class: "unfavorite-text-image" do%>
-           <%= image_tag "favo2.png", class: "favo-image"%>
+           <%= image_tag "favo1.png", class: "favo-image"%>
             <div class = favo-text>
              取り消す
            </div>
