@@ -49,7 +49,6 @@
     <% if user_signed_in?%>
       <% unless @tweet.user.id == current_user.id%>
         <%unless current_user.favorite_by?(@tweet) %>
-          <div class = "favo-wrapper">
             <%= link_to tweet_favorites_path(@tweet), method: :post, class: "favorite-text-image" do%>
               <%= image_tag "favo1.png", class: "favo-image"%>
               <div class = favo-text>
@@ -57,7 +56,6 @@
               </div>
             <% end %>
           <%else%>
-            <div class = "favo-wrapper">
          <%= link_to tweet_favorite_path(@tweet), method: :delete, class: "unfavorite-text-image" do%>
            <%= image_tag "favo2.png", class: "favo-image"%>
             <div class = favo-text>
@@ -67,7 +65,6 @@
         <%end%>
           <p class = favo-count-wrapper><%=link_to "#{@tweet.favorites.count}いいね", tweet_favorites_path(@tweet), class: "favo-count"%></p>
       <%end%>
-      </div>
       <%= form_with model: [@tweet, @comment], local: true do |f|%>
     <div class = comment-form-wrapper>
       <div class = travel-comment-form>
@@ -90,4 +87,4 @@
     </div>
     <%end%>
   <%end%>
-  </div>
+</div>
