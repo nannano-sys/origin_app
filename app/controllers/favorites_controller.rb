@@ -6,7 +6,7 @@ class FavoritesController < ApplicationController
   def create
     tweet = Tweet.find(params[:tweet_id])
     user = current_user
-    favorote = Favorite.create(user_id: user.id, tweet_id: tweet.id)
+    Favorite.create(user_id: user.id, tweet_id: tweet.id)
     redirect_to tweet_path(tweet)
   end
 
