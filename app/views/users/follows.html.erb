@@ -1,10 +1,21 @@
 
 <%=@user.nickname%><b>のフォロー一覧</b>
 
-<%@users.each do |user|%>
+<% if user_signed_in?%>
 
-<div class = "following_wrapper">
-    <div class = "user-name-info">ユーザ名：<%= link_to user.nickname, user_path(user), class: "user-name"%></div>
+<% @users.each do |user| %> 
+    <div class = "user_wrapper">
+    <div class = "folloｗ-user-name-info">ユーザ名：<%= link_to user.nickname, user_path(user), class: "user-name"%></div>
+<div class = follow-user-prof-wrapper>
+ <div class = "user-avatar">
+  <% if user.avatar.attached?%>
+    <%= image_tag user.avatar.variant(resize: '180x180'), class: 'user-avatar-image'%>
+  <%else%>
+    <%= image_tag "no-image.png", class: "no-avatar-image"%>
+  <%end%>
+ </div>
+
+ <%# ユーザーネームの部分を部分テンプとして切り出すことで、CSSの重複を避けることができると考える。%>
       
 <div class = "user-prof">      
     <ul class = "users_list">

@@ -12,11 +12,8 @@
         <h1 class = users-index-title-text>トラベルノートをチェックしましょう</h1>
 </div>
 </div>
-<%end%>
 
 
-
-<% if user_signed_in?%>
 <% @users.each do |user| %>
     <% if current_user != user %>
     <div class = "user_wrapper">
@@ -32,6 +29,8 @@
     <%= image_tag "no-image.png", class: "no-avatar-image"%>
   <%end%>
  </div>
+
+  <%# ユーザーネームの部分を部分テンプとして切り出すことで、CSSの重複を避けることができると考える。%>
     
  <div class = "user-prof">
       
@@ -60,8 +59,9 @@
   <%= image_tag 'pen.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
 </div>
-    <% end %> 
-  <% end %>
+<% end %> 
+<% end %>
+
   <%else%>
   <%= render partial: "top-page"%> 
 <% end %>
