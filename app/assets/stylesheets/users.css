@@ -65,9 +65,12 @@
   padding: 0.5em;/*文字周りの余白*/
   border-radius: 0.5em;/*角丸*/
   width: 800px;
-  
+  transition-duration: 0.5s;
 }
 
+.user-prof:hover{
+  transform: translateX(45px);
+}
 
 
 .user-index-wrapper{
@@ -167,3 +170,6 @@ li{
   margin-right: 5px;
 }
 
+.user_page_rage_link{
+  text-decoration: none;
+}
